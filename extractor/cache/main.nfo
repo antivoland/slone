@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="/skins/default/images/favicon.ico">
+<meta name='yandex-verification' content='4cf3100c28bff978'>
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="generator" content="TSiteEngine v1.5b by alBoo / alBoo@darkrunes.ru">
+
+<link rel="stylesheet" href="/skins/default/v2/css/main.css?v=2" type="text/css">
+<link rel="stylesheet" href="/skins/default/v2/css/editor.css?v=2" type="text/css">
+<link href="/skins/default/css/fileuploader.css" rel="stylesheet" type="text/css">	
+<script type="text/javascript" src="/skins/default/v2/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="/skins/default/v2/js/jquery.scroller.js"></script>
+<script type="text/javascript" src="/skins/default/v2/js/main.js?v=3"></script>
+<script type="text/javascript" src="/skins/default/js/fileuploader.js"></script>
+
+<script type="text/javascript" src="/skins/default/v2/js/editor.js?v=3"> </script>
+<script type="text/javascript" src="/skins/default/js/jquery.dialog.js"> </script>
+<script type="text/javascript" src="/interface/js/jquery/jquery.form.js"> </script>
+<link rel="stylesheet" type="text/css" href="/skins/default/css/jquery.dialog.css" media="Screen">
+<link rel="stylesheet" type="text/css" href="/skins/default/css/uploadify.css" media="Screen">
+<title>Редактирование игры (HTML) версия | KVESTER.RU</title>
+</head>
+<body>
+<div id="service_block">
+	<div class="in-1">
+		<div class="row-1">
+			<div class="cell-1-1">
+					<div class="logged-info">
+		<div class="user">
+			<a href="/profile/" class="profile">miaou-miaou</a>
+			<a class="mail" href="/profile/incoming/"><span class="icon"></span></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="/profile/edit/">Личная информация</a></li>
+				<li><a href="/profile/quests/">Мои квесты</a></li>
+				<li><a href="/game/add/">Создать новый квест</a></li>
+			</ul>
+		</div>
+		<div class="exit">
+			<a href="game/edit_new/2251?action=logout" class="icon"></a>
+		</div>
+	</div>
+				
+			</div>			
+			<div class="cell-1-2">			
+				<form class="formbox" id="SearchForm" action="/search/" method="GET">
+	<div class="text"><input type="text" name="q" placeholder="Поиск"></div>
+	<div class="submit"><label><input type="submit"></label></div>
+</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<div id="main">
+	<div id="service_block-push"></div>
+	<div id="header">
+		<div class="row-2">
+			<div class="cell-2-1">				
+				<div id="logo"><a href="/"><img src="/skins/default/v2/images/logo.png" alt="KVESTER"></a></div>
+			</div>
+						
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="row-1">
+			<div class="cell-1-1">
+				<ul class="menu">
+				<li><a href="http://kvester.ru/">Главная</a></li>
+					<li><a href="http://kvester.ru/catalog">Каталог&nbsp;квестов</a></li>
+					<li><a href="http://kvester.ru/authors">Пользователи</a></li>
+					<li><a href="http://kvester.ru/party">Тусовка</a></li>
+			
+</ul>
+				
+			</div>
+			<div class="cell-1-2">
+				<div class="social">
+					<!-- Put this script tag to the <head> of your page -->
+					<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
+
+					<script type="text/javascript">
+					  VK.init({apiId: 2653495, onlyWidgets: true});
+					</script>
+
+					<!-- Put this div tag to the place, where the Like block will be -->
+					<div id="vk_like" style="margin-top: -2px; float:right;"></div>
+					<script type="text/javascript">
+					VK.Widgets.Like("vk_like", {type: "mini"});
+					</script>
+					<div style="margin-left:10px;width:150px;overflow:hidden;height:21px; float:right;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fkvester.ru%2F&amp;layout=button_count&amp;show_faces=true&amp;width=150&amp;action=like&amp;font=tahoma&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe></div> 
+					<a href="http://twitter.com/rukvester" title="Twitter" target="_blank" rel="nofollow"><img src="/skins/default/v2/images/twitter_new.png"></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="middle">
+	<div class="create_game-header">
+<br/>
+<p><a href="http://kvester.ru/game/edit_new/2251?mode=prefs">Общая информация</a> | Конструктор<p>
+</div>
+<div class="create_game-block" style="padding-left:0px; padding-right: 0px;">		
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				$('#top_edit_menu a img').draggable({
+					helper:'clone',
+					appendTo: 'body',
+					opacity: 0.35,
+					zIndex: 10000
+				});
+				
+				gameLinks('2251');
+				gameInventory('2251');
+				gameCounters('2251');
+				
+			});	
+		
+		</script>
+		
+		<div id="top_edit_menu" style="display: none;">
+			<a href="javascript:void(0);" class="new_step" rel="1"><img src="/skins/default/images/icon_01.gif" width="36" height="36" alt="Добавить шаг" title="Добавить шаг" rel="1" class="new_step_item"></a>
+			<a href="javascript:void(0);" class="new_step" rel="3"><img src="/skins/default/images/icon_02.gif" width="36" height="36" alt="Добавить шаг" title="Добавить точку проигрыша" rel="3" class="new_step_item"></a>
+			<a href="javascript:void(0);" class="new_step" rel="2"><img src="/skins/default/images/icon_03.gif" width="36" height="36" alt="Добавить шаг" title="Добавить точку выигрыша" rel="2" class="new_step_item"></a>
+			<a href="javascript:void(0);" class="new_step" rel="4"><img src="/skins/default/images/if_point.gif" width="36" height="36" alt="Добавить шаг" title="Добавить развилку" rel="4" class="new_step_item"></a>
+		</div>
+		<div class="editor_popup" style="display: none;" rel="edit_link" title="Изменить общую ссылку"></div>
+		<div class="editor_popup" style="display: none;" rel="edit_inventory" title="Изменить условие"></div>
+		<div class="editor_popup" style="display: none;" rel="edit_counters" title="Изменить счетчик"></div>
+		<div id="keditor_links" title="Общие ссылки"></div>
+		<div id="keditor_inventories" title="Условия"></div>
+		<div id="keditor_counters" title="Счетчики"></div>
+		
+		<div class="editor_popup" rel="edit" title="Редактирование точки" style="display: none;">
+		</div>
+		<div class="editor_popup" rel="settings" title="Настройки" style="display: none;">
+		</div>
+		<div class="editor_popup" rel="gallery" title="Фотогалерея" style="display: none;">
+		</div>
+		<div id="point_visible" title="Видимость шага" style="display: none;">
+		</div>
+		<div id="counters_visible" title="Счетчики в точке" style="display: none;">
+		</div>
+		<div id="point_counters" title="Изменение счетчиков" style="display: none;">
+		</div>
+		<div id="editor_popup_loading" style="display: none; text-align: center;">
+			<img src="/skins/default/images/loading.gif"><br/>Загрузка данных..
+		</div>
+		<div id="editor_popup_saving" style="display: none; text-align: center;">
+			<img src="/skins/default/images/loading.gif"><br/>Сохранение схемы на сервер...
+		</div>
+		<div id="editor_popup_testing" style="display: none; text-align: center;">
+			<img src="/skins/default/images/loading.gif"><br/>Проверка схемы...
+		</div>
+		<div id="editor_popup_version" style="display: none; text-align: center;">
+			<p><strong>Версия №1</strong></p>
+			<p><strong>Комментарий:</strong></p>
+			<textarea id="version_message" cols="50" rows="10" style="width: 300px;"></textarea>
+			<div class="form_buttons">
+				<a class="button_submit" href="#" onclick="$('#editor_popup_version').dialog('close'); return false;">Сохранить</a>
+			</div>
+		</div>
+		<div id="editor_popup_edit_message" style="display: none; text-align: center;">
+			<textarea id="message_text" cols="50" rows="10"></textarea>
+			<div class="form_buttons">
+				<a class="button_submit" href="#" onclick="$('#editor_popup_edit_message').dialog('close'); return false;">Сохранить</a>
+			</div>
+		</div>
+		<div id="editor_popup_errors" style="display: none;"></div>
+		
+		<div class="fishka_container" style="display: none;" id="editor_popup_choose">
+			<div class="fishka razvilka" style="cursor: pointer" onclick="return newPoint(1,'2251');"><span>Развилка</span></div>
+			<div class="fishka win" style="cursor: pointer" onclick="return newPoint(2,'2251');"><span>Выигрыш</span></div>
+			<div class="fishka gameover" style="cursor: pointer" onclick="return newPoint(3,'2251');"><span>Проигрыш</span></div>
+			<div class="fishka ifpoint" style="cursor: pointer" onclick="return newPoint(4,'2251');"><span>Условие</span></div>
+		</div>
+		
+		<div class="fishka_container" style="display: none;" id="editor_popup_if_choose">
+			<div class="fishka razvilka" style="cursor: pointer" onclick="return ifNewPoint(1,'2251');"><span>Развилка</span></div>
+			<div class="fishka win" style="cursor: pointer" onclick="return ifNewPoint(2,'2251');"><span>Выигрыш</span></div>
+			<div class="fishka gameover" style="cursor: pointer" onclick="return ifNewPoint(3,'2251');"><span>Проигрыш</span></div>
+			<div class="fishka ifpoint" style="cursor: pointer" onclick="return ifNewPoint(4,'2251');"><span>Условие</span></div>
+		</div>
+		
+<div class="constructor" id="constructor">
+		
+	<div id="quest_editor">
+	
+	<div id="quest_menu">
+		<ul>
+			<li><a href="javascript:void(0);" onclick="saveData('2251'); return false;"><span>Сохранить</span></a></li>
+			<li><a href="javascript:void(0);" onclick="gameSettings('2251')"><span>Настроить</span></a></li>
+			<li><a href="javascript:void(0);" onclick="testData('2251');"><span>Проверить связи</span></a></li>
+			<li><a href="/game/test_quest/2251?restart" target="_blank"><span>Тестовая игра</span></a></li>            
+			<li><a href="/profile/quests?mod=1" onclick="publicData('2251'); return false;"><span>Отправить на модерацию</span></a></li>
+		</ul>
+		<span style="margin-left: 250px; color: #fff;"><input type="checkbox" value="1" checked="checked" id="autosave" />&nbsp;&nbsp;&nbsp;Автосохранение</span>
+	</div>
+		<script type="text/javascript" src="/skins/default/js/graph/raphael.js"></script>
+    <script type="text/javascript" src="/skins/default/js/graph/dracula_graffle.js"></script>
+    <script type="text/javascript" src="/skins/default/js/graph/dracula_graph_new.js?v=5"></script>	
+	    <script type="text/javascript">
+	
+	var redraw, g, renderer, layouter;
+	
+	var max_event = 91;
+	var width = 920;
+	var height = 1019;
+	
+	/* only do all this when document has finished loading (needed for RaphaelJS) */
+	var loadGraphics = function() {
+		
+		
+		g = new Graph();
+					g.addNode("31335",{
+				label: 'Старт',
+				x: 54,
+				y: 34,
+				rel: "0",
+				radius: 30,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31404",{
+				label: '8',
+				x: 447,
+				y: 128,
+				rel: "8",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Насосная станция',
+				color: '#20CE1F'
+			});
+					g.addNode("31407",{
+				label: '9',
+				x: 455,
+				y: 277,
+				rel: "9",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Дом Мышонка',
+				color: '#20CE1F'
+			});
+					g.addNode("31408",{
+				label: '10',
+				x: 639,
+				y: 262,
+				rel: "10",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Болото',
+				color: '#20CE1F'
+			});
+					g.addNode("31411",{
+				label: '11',
+				x: 271,
+				y: 468,
+				rel: "11",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Мастерская Крота',
+				color: '#20CE1F'
+			});
+					g.addNode("31416",{
+				label: '12',
+				x: 150,
+				y: 119,
+				rel: "12",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Выход из пещеры',
+				color: '#20CE1F'
+			});
+					g.addNode("31447",{
+				label: '13',
+				x: 640,
+				y: 294,
+				rel: "13",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Осушенное болото',
+				color: '#20CE1F'
+			});
+					g.addNode("31451",{
+				label: '14',
+				x: 51,
+				y: 658,
+				rel: "14",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Лифт',
+				color: '#20CE1F'
+			});
+					g.addNode("31452",{
+				label: '15',
+				x: 644,
+				y: 660,
+				rel: "15",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Электростанция',
+				color: '#20CE1F'
+			});
+					g.addNode("31453",{
+				label: '16',
+				x: 450,
+				y: 659,
+				rel: "16",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Шахты',
+				color: '#20CE1F'
+			});
+					g.addNode("31454",{
+				label: '17',
+				x: 455,
+				y: 450,
+				rel: "17",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Тоннель',
+				color: '#20CE1F'
+			});
+					g.addNode("31463",{
+				label: '18',
+				x: 278,
+				y: 126,
+				rel: "18",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Пещеры',
+				color: '#20CE1F'
+			});
+					g.addNode("31464",{
+				label: '19',
+				x: 278,
+				y: 277,
+				rel: "19",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Грибной поезд',
+				color: '#20CE1F'
+			});
+					g.addNode("31492",{
+				label: '20',
+				x: 256,
+				y: 445,
+				rel: "20",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Мастерская крота',
+				color: '#20CE1F'
+			});
+					g.addNode("31511",{
+				label: '21',
+				x: 150,
+				y: 148,
+				rel: "21",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Выход из пещеры',
+				color: '#20CE1F'
+			});
+					g.addNode("31542",{
+				label: '22',
+				x: 723,
+				y: 262,
+				rel: "22",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Болото',
+				color: '#37A5E4'
+			});
+					g.addNode("31544",{
+				label: '23',
+				x: 170,
+				y: 305,
+				rel: "23",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Грибной поезд',
+				color: '#37A5E4'
+			});
+					g.addNode("31545",{
+				label: '24',
+				x: 139,
+				y: 311,
+				rel: "24",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#444444'
+			});
+					g.addNode("31546",{
+				label: '25',
+				x: 757,
+				y: 261,
+				rel: "25",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#444444'
+			});
+					g.addNode("31747",{
+				label: '26',
+				x: 285,
+				y: 443,
+				rel: "26",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Мастерская Крота',
+				color: '#20CE1F'
+			});
+					g.addNode("31846",{
+				label: '27',
+				x: 51,
+				y: 589,
+				rel: "27",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Лифт',
+				color: '#20CE1F'
+			});
+					g.addNode("31847",{
+				label: '28',
+				x: 18,
+				y: 59,
+				rel: "28",
+				radius: 20,
+				quest: '2251',
+				link: true,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31848",{
+				label: '29',
+				x: 55,
+				y: 513,
+				rel: "29",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Лифт',
+				color: '#20CE1F'
+			});
+					g.addNode("31850",{
+				label: '31',
+				x: 62,
+				y: 765,
+				rel: "31",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31851",{
+				label: '32',
+				x: 93,
+				y: 764,
+				rel: "32",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31852",{
+				label: '33',
+				x: 126,
+				y: 765,
+				rel: "33",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31853",{
+				label: '34',
+				x: 159,
+				y: 765,
+				rel: "34",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31854",{
+				label: '35',
+				x: 192,
+				y: 764,
+				rel: "35",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31855",{
+				label: '36',
+				x: 224,
+				y: 769,
+				rel: "36",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31856",{
+				label: '37',
+				x: 256,
+				y: 770,
+				rel: "37",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31857",{
+				label: '38',
+				x: 287,
+				y: 768,
+				rel: "38",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31858",{
+				label: '39',
+				x: 319,
+				y: 769,
+				rel: "39",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31859",{
+				label: '40',
+				x: 355,
+				y: 772,
+				rel: "40",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31860",{
+				label: '41',
+				x: 388,
+				y: 771,
+				rel: "41",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31861",{
+				label: '42',
+				x: 416,
+				y: 779,
+				rel: "42",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31862",{
+				label: '43',
+				x: 451,
+				y: 770,
+				rel: "43",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31863",{
+				label: '44',
+				x: 482,
+				y: 774,
+				rel: "44",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31864",{
+				label: '45',
+				x: 546,
+				y: 811,
+				rel: "45",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31866",{
+				label: '47',
+				x: 575,
+				y: 815,
+				rel: "47",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: '  ',
+				color: '#20CE1F'
+			});
+					g.addNode("31867",{
+				label: '48',
+				x: 145,
+				y: 216,
+				rel: "48",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("31868",{
+				label: '49',
+				x: 485,
+				y: 277,
+				rel: "49",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Дом Мышонка',
+				color: '#20CE1F'
+			});
+					g.addNode("31869",{
+				label: '50',
+				x: 62,
+				y: 887,
+				rel: "50",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32167",{
+				label: '51',
+				x: 91,
+				y: 887,
+				rel: "51",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32168",{
+				label: '52',
+				x: 122,
+				y: 888,
+				rel: "52",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32169",{
+				label: '53',
+				x: 151,
+				y: 886,
+				rel: "53",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32170",{
+				label: '54',
+				x: 182,
+				y: 886,
+				rel: "54",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32171",{
+				label: '55',
+				x: 215,
+				y: 887,
+				rel: "55",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32172",{
+				label: '56',
+				x: 245,
+				y: 889,
+				rel: "56",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32173",{
+				label: '57',
+				x: 274,
+				y: 890,
+				rel: "57",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32174",{
+				label: '58',
+				x: 304,
+				y: 891,
+				rel: "58",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32175",{
+				label: '59',
+				x: 334,
+				y: 891,
+				rel: "59",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32176",{
+				label: '60',
+				x: 366,
+				y: 894,
+				rel: "60",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32177",{
+				label: '61',
+				x: 396,
+				y: 891,
+				rel: "61",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32178",{
+				label: '62',
+				x: 424,
+				y: 893,
+				rel: "62",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32179",{
+				label: '63',
+				x: 52,
+				y: 216,
+				rel: "63",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Выход из пещеры',
+				color: '#20CE1F'
+			});
+					g.addNode("32180",{
+				label: '64',
+				x: 673,
+				y: 991,
+				rel: "64",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32181",{
+				label: '65',
+				x: 128,
+				y: 33,
+				rel: "65",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Предыстория',
+				color: '#20CE1F'
+			});
+					g.addNode("32182",{
+				label: '66',
+				x: 56,
+				y: 118,
+				rel: "66",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Вход в пещеру',
+				color: '#20CE1F'
+			});
+					g.addNode("32183",{
+				label: '67',
+				x: 161,
+				y: 33,
+				rel: "67",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Предыстория',
+				color: '#20CE1F'
+			});
+					g.addNode("32185",{
+				label: '69',
+				x: 693,
+				y: 262,
+				rel: "69",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Болото',
+				color: '#20CE1F'
+			});
+					g.addNode("32186",{
+				label: '70',
+				x: 204,
+				y: 300,
+				rel: "70",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: 'Грибной поезд',
+				color: '#20CE1F'
+			});
+					g.addNode("32552",{
+				label: '71',
+				x: 65,
+				y: 986,
+				rel: "71",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32553",{
+				label: '72',
+				x: 92,
+				y: 984,
+				rel: "72",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32554",{
+				label: '73',
+				x: 123,
+				y: 984,
+				rel: "73",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32555",{
+				label: '74',
+				x: 155,
+				y: 986,
+				rel: "74",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32556",{
+				label: '75',
+				x: 186,
+				y: 985,
+				rel: "75",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32557",{
+				label: '76',
+				x: 218,
+				y: 988,
+				rel: "76",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32558",{
+				label: '77',
+				x: 250,
+				y: 990,
+				rel: "77",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32559",{
+				label: '78',
+				x: 282,
+				y: 993,
+				rel: "78",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32560",{
+				label: '79',
+				x: 314,
+				y: 991,
+				rel: "79",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32561",{
+				label: '80',
+				x: 344,
+				y: 990,
+				rel: "80",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32562",{
+				label: '81',
+				x: 374,
+				y: 990,
+				rel: "81",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32563",{
+				label: '82',
+				x: 400,
+				y: 988,
+				rel: "82",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32564",{
+				label: '83',
+				x: 430,
+				y: 992,
+				rel: "83",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32565",{
+				label: '84',
+				x: 458,
+				y: 991,
+				rel: "84",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32566",{
+				label: '85',
+				x: 489,
+				y: 992,
+				rel: "85",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32567",{
+				label: '86',
+				x: 520,
+				y: 992,
+				rel: "86",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32568",{
+				label: '87',
+				x: 552,
+				y: 992,
+				rel: "87",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32569",{
+				label: '88',
+				x: 582,
+				y: 994,
+				rel: "88",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32570",{
+				label: '89',
+				x: 613,
+				y: 994,
+				rel: "89",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("32571",{
+				label: '90',
+				x: 643,
+				y: 993,
+				rel: "90",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#20CE1F'
+			});
+					g.addNode("34090",{
+				label: '91',
+				x: 222,
+				y: 219,
+				rel: "91",
+				radius: 20,
+				quest: '2251',
+				link: false,
+				error: false,
+				tip: ' ',
+				color: '#ff8900'
+			});
+		
+																												g.addEdge(31542, 31546, { directed : true, error: false} );
+											g.addEdge(31544, 31545, { directed : true, error: false} );
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															g.addEdge(31407, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(31407, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(31511, 31463, { directed : true, error: false, action: true} );
+											g.addEdge(31416, 31463, { directed : true, error: false, action: true} );
+											g.addEdge(31416, 32182, { directed : true, error: false, action: true} );
+											g.addEdge(32169, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32167, 32170, { directed : true, error: false, action: true} );
+											g.addEdge(32167, 32169, { directed : true, error: false, action: true} );
+											g.addEdge(32170, 32171, { directed : true, error: false, action: true} );
+											g.addEdge(32171, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(32172, 32173, { directed : true, error: false, action: true} );
+											g.addEdge(32173, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32173, 32175, { directed : true, error: false, action: true} );
+											g.addEdge(32173, 32174, { directed : true, error: false, action: true} );
+											g.addEdge(32173, 32171, { directed : true, error: false, action: true} );
+											g.addEdge(32168, 32169, { directed : true, error: false, action: true} );
+											g.addEdge(32167, 32168, { directed : true, error: false, action: true} );
+											g.addEdge(31869, 32176, { directed : true, error: false, action: true} );
+											g.addEdge(32174, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32177, 32171, { directed : true, error: false, action: true} );
+											g.addEdge(32177, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32175, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32183, 32182, { directed : true, error: false, action: true} );
+											g.addEdge(31335, 32182, { directed : true, error: false, action: true} );
+											g.addEdge(31335, 32181, { directed : true, error: false, action: true} );
+											g.addEdge(32181, 32183, { directed : true, error: false, action: true} );
+											g.addEdge(32176, 32177, { directed : true, error: false, action: true} );
+											g.addEdge(32176, 32177, { directed : true, error: false, action: true} );
+											g.addEdge(32176, 32178, { directed : true, error: false, action: true} );
+											g.addEdge(32178, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(32178, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(31851, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31851, 31861, { directed : true, error: false, action: true} );
+											g.addEdge(31851, 31852, { directed : true, error: false, action: true} );
+											g.addEdge(31747, 31864, { directed : true, error: false, action: true} );
+											g.addEdge(31848, 32179, { directed : true, error: false, action: true} );
+											g.addEdge(31451, 31846, { directed : true, error: false, action: true} );
+											g.addEdge(32186, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(32186, 31544, { directed : true, error: false, action: true} );
+											g.addEdge(31851, 31854, { directed : true, error: false, action: true} );
+											g.addEdge(31852, 31853, { directed : true, error: false, action: true} );
+											g.addEdge(31852, 31853, { directed : true, error: false, action: true} );
+											g.addEdge(31853, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31854, 31862, { directed : true, error: false, action: true} );
+											g.addEdge(31854, 31857, { directed : true, error: false, action: true} );
+											g.addEdge(31854, 31856, { directed : true, error: false, action: true} );
+											g.addEdge(31854, 31855, { directed : true, error: false, action: true} );
+											g.addEdge(31855, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31856, 31858, { directed : true, error: false, action: true} );
+											g.addEdge(31856, 31855, { directed : true, error: false, action: true} );
+											g.addEdge(31857, 31861, { directed : true, error: false, action: true} );
+											g.addEdge(31857, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31858, 31863, { directed : true, error: false, action: true} );
+											g.addEdge(31858, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31859, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31860, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31860, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31860, 31862, { directed : true, error: false, action: true} );
+											g.addEdge(31861, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31862, 31747, { directed : true, error: false, action: true} );
+											g.addEdge(31863, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31863, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31863, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31855, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31862, { directed : true, error: false, action: true} );
+											g.addEdge(31408, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(31408, 32185, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31492, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31747, { directed : true, error: false, action: true} );
+											g.addEdge(31869, 32172, { directed : true, error: false, action: true} );
+											g.addEdge(32556, 32555, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(32185, 31408, { directed : true, error: false, action: true} );
+											g.addEdge(32185, 31542, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31866, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31864, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31864, { directed : true, error: false, action: true} );
+											g.addEdge(31864, 31747, { directed : true, error: false, action: true} );
+											g.addEdge(31864, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31866, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31452, 31453, { directed : true, error: false, action: true} );
+											g.addEdge(32556, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(31453, 31452, { directed : true, error: false, action: true} );
+											g.addEdge(31453, 31452, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32570, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32566, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32567, { directed : true, error: false, action: true} );
+											g.addEdge(32553, 32554, { directed : true, error: false, action: true} );
+											g.addEdge(32553, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32554, 32558, { directed : true, error: false, action: true} );
+											g.addEdge(32554, 32557, { directed : true, error: false, action: true} );
+											g.addEdge(32554, 32556, { directed : true, error: false, action: true} );
+											g.addEdge(32555, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(32557, 32560, { directed : true, error: false, action: true} );
+											g.addEdge(32557, 32559, { directed : true, error: false, action: true} );
+											g.addEdge(32557, 32558, { directed : true, error: false, action: true} );
+											g.addEdge(32558, 32565, { directed : true, error: false, action: true} );
+											g.addEdge(32558, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32558, 32561, { directed : true, error: false, action: true} );
+											g.addEdge(32559, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32560, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32561, 32562, { directed : true, error: false, action: true} );
+											g.addEdge(32562, 32180, { directed : true, error: false, action: true} );
+											g.addEdge(32563, 32555, { directed : true, error: false, action: true} );
+											g.addEdge(32563, 32564, { directed : true, error: false, action: true} );
+											g.addEdge(32564, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32565, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(32566, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32567, 32568, { directed : true, error: false, action: true} );
+											g.addEdge(32567, 32570, { directed : true, error: false, action: true} );
+											g.addEdge(32568, 32569, { directed : true, error: false, action: true} );
+											g.addEdge(32569, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32570, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32571, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(31858, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31454, 31453, { directed : true, error: false, action: true} );
+											g.addEdge(31454, 31492, { directed : true, error: false, action: true} );
+											g.addEdge(31454, 31747, { directed : true, error: false, action: true} );
+											g.addEdge(31857, 31860, { directed : true, error: false, action: true} );
+											g.addEdge(31463, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(31463, 31404, { directed : true, error: false, action: true} );
+											g.addEdge(31463, 31511, { directed : true, error: false, action: true} );
+											g.addEdge(31463, 31416, { directed : true, error: false, action: true} );
+											g.addEdge(31869, 32167, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32554, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31854, { directed : true, error: false, action: true} );
+											g.addEdge(31407, 31408, { directed : true, error: false, action: true} );
+											g.addEdge(31407, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(31868, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(31868, 31447, { directed : true, error: false, action: true} );
+											g.addEdge(31868, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32553, { directed : true, error: false, action: true} );
+											g.addEdge(32562, 32563, { directed : true, error: false, action: true} );
+											g.addEdge(32180, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(31747, 31454, { directed : true, error: false, action: true} );
+											g.addEdge(31747, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(31454, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31404, 31463, { directed : true, error: false, action: true} );
+											g.addEdge(31492, 31454, { directed : true, error: false, action: true} );
+											g.addEdge(31846, 31451, { directed : true, error: false, action: true} );
+											g.addEdge(31846, 31848, { directed : true, error: false, action: true} );
+											g.addEdge(31451, 31453, { directed : true, error: false, action: true} );
+											g.addEdge(31453, 31451, { directed : true, error: false, action: true} );
+											g.addEdge(31453, 31454, { directed : true, error: false, action: true} );
+											g.addEdge(31447, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31454, { directed : true, error: false, action: true} );
+											g.addEdge(31492, 31464, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 31463, { directed : true, error: false, action: true} );
+											g.addEdge(31847, 31335, { directed : true, error: false, action: true} );
+											g.addEdge(32179, 31867, { directed : true, error: false, action: true} );
+											g.addEdge(31867, 34090, { directed : true, error: false, action: true} );
+											g.addEdge(31464, 32186, { directed : true, error: false, action: true} );
+											g.addEdge(31858, 31861, { directed : true, error: false, action: true} );
+											g.addEdge(32182, 31416, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31851, { directed : true, error: false, action: true} );
+											g.addEdge(31850, 31411, { directed : true, error: false, action: true} );
+											g.addEdge(31852, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31854, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31855, 31859, { directed : true, error: false, action: true} );
+											g.addEdge(31856, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31857, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31411, 31850, { directed : true, error: false, action: true} );
+											g.addEdge(31869, 31868, { directed : true, error: false, action: true} );
+											g.addEdge(32167, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32168, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32170, 31869, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 32571, { directed : true, error: false, action: true} );
+											g.addEdge(32552, 31407, { directed : true, error: false, action: true} );
+											g.addEdge(32554, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32557, 32552, { directed : true, error: false, action: true} );
+											g.addEdge(32562, 32563, { directed : true, error: false, action: true} );
+							
+
+		/* layout the graph using the Spring layout implementation */
+		layouter = new Graph.Layout.Spring(g);
+		
+		/* draw the graph using the RaphaelJS draw implementation */
+		renderer = new Graph.Renderer.Raphael('canvas', g, width, height);
+		
+		redraw = function() {
+			layouter.layout();
+			renderer.draw();
+		};
+		hide = function(id) {
+			g.nodes[id].hide();
+		};
+		show = function(id) {
+			g.nodes[id].show();
+		};
+		
+		$('#canvas').droppable({
+			drop: function(event, ui) {
+				if (ui.draggable.hasClass('new_step_item')) {
+						ui.offset
+						var k = $("#canvas").offset();
+						
+						addPoint(ui.draggable.attr('rel'),'2251',ui.offset.left-k.left,ui.offset.top-k.top);
+						
+				}
+			}
+		});
+	}
+	window.onload = function() {
+		loadGraphics();
+		$('#top_edit_menu').dialog({width: 63, height: 245, maxWidth: 63, dialogClass: 'no_close'});
+		
+		var position = $('#constructor').offset();
+		$("#top_edit_menu").dialog( "option", "position", [position.left+10,position.top+60] );
+		$("#top_edit_menu").parent().css('top',position.top+60);
+		$("#top_edit_menu").parent().css('left',position.left+10);
+		$('.no_close').css('width',63);
+		$('.no_close a.ui-dialog-titlebar-close').hide();
+	};
+	
+	</script>
+	<div id="xml_data" style="display: none;">
+		<form id="dataXML">
+					<input type="hidden" name="events[31335][p_num]" value="0" rel="31335" class="events num"/>
+			<input type="hidden" name="events[31335][p_x]" value="54" rel="31335" class="events x"/>
+			<input type="hidden" name="events[31335][p_y]" value="34" rel="31335" class="events y"/>
+			<input type="hidden" name="events[31335][p_type]" value="4" rel="31335" class="events type"/>
+					<input type="hidden" name="events[31404][p_num]" value="8" rel="31404" class="events num"/>
+			<input type="hidden" name="events[31404][p_x]" value="447" rel="31404" class="events x"/>
+			<input type="hidden" name="events[31404][p_y]" value="128" rel="31404" class="events y"/>
+			<input type="hidden" name="events[31404][p_type]" value="4" rel="31404" class="events type"/>
+					<input type="hidden" name="events[31407][p_num]" value="9" rel="31407" class="events num"/>
+			<input type="hidden" name="events[31407][p_x]" value="455" rel="31407" class="events x"/>
+			<input type="hidden" name="events[31407][p_y]" value="277" rel="31407" class="events y"/>
+			<input type="hidden" name="events[31407][p_type]" value="4" rel="31407" class="events type"/>
+					<input type="hidden" name="events[31408][p_num]" value="10" rel="31408" class="events num"/>
+			<input type="hidden" name="events[31408][p_x]" value="639" rel="31408" class="events x"/>
+			<input type="hidden" name="events[31408][p_y]" value="262" rel="31408" class="events y"/>
+			<input type="hidden" name="events[31408][p_type]" value="4" rel="31408" class="events type"/>
+					<input type="hidden" name="events[31411][p_num]" value="11" rel="31411" class="events num"/>
+			<input type="hidden" name="events[31411][p_x]" value="271" rel="31411" class="events x"/>
+			<input type="hidden" name="events[31411][p_y]" value="468" rel="31411" class="events y"/>
+			<input type="hidden" name="events[31411][p_type]" value="4" rel="31411" class="events type"/>
+					<input type="hidden" name="events[31416][p_num]" value="12" rel="31416" class="events num"/>
+			<input type="hidden" name="events[31416][p_x]" value="150" rel="31416" class="events x"/>
+			<input type="hidden" name="events[31416][p_y]" value="119" rel="31416" class="events y"/>
+			<input type="hidden" name="events[31416][p_type]" value="4" rel="31416" class="events type"/>
+					<input type="hidden" name="events[31447][p_num]" value="13" rel="31447" class="events num"/>
+			<input type="hidden" name="events[31447][p_x]" value="640" rel="31447" class="events x"/>
+			<input type="hidden" name="events[31447][p_y]" value="294" rel="31447" class="events y"/>
+			<input type="hidden" name="events[31447][p_type]" value="4" rel="31447" class="events type"/>
+					<input type="hidden" name="events[31451][p_num]" value="14" rel="31451" class="events num"/>
+			<input type="hidden" name="events[31451][p_x]" value="51" rel="31451" class="events x"/>
+			<input type="hidden" name="events[31451][p_y]" value="658" rel="31451" class="events y"/>
+			<input type="hidden" name="events[31451][p_type]" value="4" rel="31451" class="events type"/>
+					<input type="hidden" name="events[31452][p_num]" value="15" rel="31452" class="events num"/>
+			<input type="hidden" name="events[31452][p_x]" value="644" rel="31452" class="events x"/>
+			<input type="hidden" name="events[31452][p_y]" value="660" rel="31452" class="events y"/>
+			<input type="hidden" name="events[31452][p_type]" value="4" rel="31452" class="events type"/>
+					<input type="hidden" name="events[31453][p_num]" value="16" rel="31453" class="events num"/>
+			<input type="hidden" name="events[31453][p_x]" value="450" rel="31453" class="events x"/>
+			<input type="hidden" name="events[31453][p_y]" value="659" rel="31453" class="events y"/>
+			<input type="hidden" name="events[31453][p_type]" value="4" rel="31453" class="events type"/>
+					<input type="hidden" name="events[31454][p_num]" value="17" rel="31454" class="events num"/>
+			<input type="hidden" name="events[31454][p_x]" value="455" rel="31454" class="events x"/>
+			<input type="hidden" name="events[31454][p_y]" value="450" rel="31454" class="events y"/>
+			<input type="hidden" name="events[31454][p_type]" value="4" rel="31454" class="events type"/>
+					<input type="hidden" name="events[31463][p_num]" value="18" rel="31463" class="events num"/>
+			<input type="hidden" name="events[31463][p_x]" value="278" rel="31463" class="events x"/>
+			<input type="hidden" name="events[31463][p_y]" value="126" rel="31463" class="events y"/>
+			<input type="hidden" name="events[31463][p_type]" value="4" rel="31463" class="events type"/>
+					<input type="hidden" name="events[31464][p_num]" value="19" rel="31464" class="events num"/>
+			<input type="hidden" name="events[31464][p_x]" value="278" rel="31464" class="events x"/>
+			<input type="hidden" name="events[31464][p_y]" value="277" rel="31464" class="events y"/>
+			<input type="hidden" name="events[31464][p_type]" value="4" rel="31464" class="events type"/>
+					<input type="hidden" name="events[31492][p_num]" value="20" rel="31492" class="events num"/>
+			<input type="hidden" name="events[31492][p_x]" value="256" rel="31492" class="events x"/>
+			<input type="hidden" name="events[31492][p_y]" value="445" rel="31492" class="events y"/>
+			<input type="hidden" name="events[31492][p_type]" value="4" rel="31492" class="events type"/>
+					<input type="hidden" name="events[31511][p_num]" value="21" rel="31511" class="events num"/>
+			<input type="hidden" name="events[31511][p_x]" value="150" rel="31511" class="events x"/>
+			<input type="hidden" name="events[31511][p_y]" value="148" rel="31511" class="events y"/>
+			<input type="hidden" name="events[31511][p_type]" value="4" rel="31511" class="events type"/>
+					<input type="hidden" name="events[31542][p_num]" value="22" rel="31542" class="events num"/>
+			<input type="hidden" name="events[31542][p_x]" value="723" rel="31542" class="events x"/>
+			<input type="hidden" name="events[31542][p_y]" value="262" rel="31542" class="events y"/>
+			<input type="hidden" name="events[31542][p_type]" value="1" rel="31542" class="events type"/>
+					<input type="hidden" name="events[31544][p_num]" value="23" rel="31544" class="events num"/>
+			<input type="hidden" name="events[31544][p_x]" value="170" rel="31544" class="events x"/>
+			<input type="hidden" name="events[31544][p_y]" value="305" rel="31544" class="events y"/>
+			<input type="hidden" name="events[31544][p_type]" value="1" rel="31544" class="events type"/>
+					<input type="hidden" name="events[31545][p_num]" value="24" rel="31545" class="events num"/>
+			<input type="hidden" name="events[31545][p_x]" value="139" rel="31545" class="events x"/>
+			<input type="hidden" name="events[31545][p_y]" value="311" rel="31545" class="events y"/>
+			<input type="hidden" name="events[31545][p_type]" value="3" rel="31545" class="events type"/>
+					<input type="hidden" name="events[31546][p_num]" value="25" rel="31546" class="events num"/>
+			<input type="hidden" name="events[31546][p_x]" value="757" rel="31546" class="events x"/>
+			<input type="hidden" name="events[31546][p_y]" value="261" rel="31546" class="events y"/>
+			<input type="hidden" name="events[31546][p_type]" value="3" rel="31546" class="events type"/>
+					<input type="hidden" name="events[31747][p_num]" value="26" rel="31747" class="events num"/>
+			<input type="hidden" name="events[31747][p_x]" value="285" rel="31747" class="events x"/>
+			<input type="hidden" name="events[31747][p_y]" value="443" rel="31747" class="events y"/>
+			<input type="hidden" name="events[31747][p_type]" value="4" rel="31747" class="events type"/>
+					<input type="hidden" name="events[31846][p_num]" value="27" rel="31846" class="events num"/>
+			<input type="hidden" name="events[31846][p_x]" value="51" rel="31846" class="events x"/>
+			<input type="hidden" name="events[31846][p_y]" value="589" rel="31846" class="events y"/>
+			<input type="hidden" name="events[31846][p_type]" value="4" rel="31846" class="events type"/>
+					<input type="hidden" name="events[31847][p_num]" value="28" rel="31847" class="events num"/>
+			<input type="hidden" name="events[31847][p_x]" value="18" rel="31847" class="events x"/>
+			<input type="hidden" name="events[31847][p_y]" value="59" rel="31847" class="events y"/>
+			<input type="hidden" name="events[31847][p_type]" value="4" rel="31847" class="events type"/>
+					<input type="hidden" name="events[31848][p_num]" value="29" rel="31848" class="events num"/>
+			<input type="hidden" name="events[31848][p_x]" value="55" rel="31848" class="events x"/>
+			<input type="hidden" name="events[31848][p_y]" value="513" rel="31848" class="events y"/>
+			<input type="hidden" name="events[31848][p_type]" value="4" rel="31848" class="events type"/>
+					<input type="hidden" name="events[31850][p_num]" value="31" rel="31850" class="events num"/>
+			<input type="hidden" name="events[31850][p_x]" value="62" rel="31850" class="events x"/>
+			<input type="hidden" name="events[31850][p_y]" value="765" rel="31850" class="events y"/>
+			<input type="hidden" name="events[31850][p_type]" value="4" rel="31850" class="events type"/>
+					<input type="hidden" name="events[31851][p_num]" value="32" rel="31851" class="events num"/>
+			<input type="hidden" name="events[31851][p_x]" value="93" rel="31851" class="events x"/>
+			<input type="hidden" name="events[31851][p_y]" value="764" rel="31851" class="events y"/>
+			<input type="hidden" name="events[31851][p_type]" value="4" rel="31851" class="events type"/>
+					<input type="hidden" name="events[31852][p_num]" value="33" rel="31852" class="events num"/>
+			<input type="hidden" name="events[31852][p_x]" value="126" rel="31852" class="events x"/>
+			<input type="hidden" name="events[31852][p_y]" value="765" rel="31852" class="events y"/>
+			<input type="hidden" name="events[31852][p_type]" value="4" rel="31852" class="events type"/>
+					<input type="hidden" name="events[31853][p_num]" value="34" rel="31853" class="events num"/>
+			<input type="hidden" name="events[31853][p_x]" value="159" rel="31853" class="events x"/>
+			<input type="hidden" name="events[31853][p_y]" value="765" rel="31853" class="events y"/>
+			<input type="hidden" name="events[31853][p_type]" value="4" rel="31853" class="events type"/>
+					<input type="hidden" name="events[31854][p_num]" value="35" rel="31854" class="events num"/>
+			<input type="hidden" name="events[31854][p_x]" value="192" rel="31854" class="events x"/>
+			<input type="hidden" name="events[31854][p_y]" value="764" rel="31854" class="events y"/>
+			<input type="hidden" name="events[31854][p_type]" value="4" rel="31854" class="events type"/>
+					<input type="hidden" name="events[31855][p_num]" value="36" rel="31855" class="events num"/>
+			<input type="hidden" name="events[31855][p_x]" value="224" rel="31855" class="events x"/>
+			<input type="hidden" name="events[31855][p_y]" value="769" rel="31855" class="events y"/>
+			<input type="hidden" name="events[31855][p_type]" value="4" rel="31855" class="events type"/>
+					<input type="hidden" name="events[31856][p_num]" value="37" rel="31856" class="events num"/>
+			<input type="hidden" name="events[31856][p_x]" value="256" rel="31856" class="events x"/>
+			<input type="hidden" name="events[31856][p_y]" value="770" rel="31856" class="events y"/>
+			<input type="hidden" name="events[31856][p_type]" value="4" rel="31856" class="events type"/>
+					<input type="hidden" name="events[31857][p_num]" value="38" rel="31857" class="events num"/>
+			<input type="hidden" name="events[31857][p_x]" value="287" rel="31857" class="events x"/>
+			<input type="hidden" name="events[31857][p_y]" value="768" rel="31857" class="events y"/>
+			<input type="hidden" name="events[31857][p_type]" value="4" rel="31857" class="events type"/>
+					<input type="hidden" name="events[31858][p_num]" value="39" rel="31858" class="events num"/>
+			<input type="hidden" name="events[31858][p_x]" value="319" rel="31858" class="events x"/>
+			<input type="hidden" name="events[31858][p_y]" value="769" rel="31858" class="events y"/>
+			<input type="hidden" name="events[31858][p_type]" value="4" rel="31858" class="events type"/>
+					<input type="hidden" name="events[31859][p_num]" value="40" rel="31859" class="events num"/>
+			<input type="hidden" name="events[31859][p_x]" value="355" rel="31859" class="events x"/>
+			<input type="hidden" name="events[31859][p_y]" value="772" rel="31859" class="events y"/>
+			<input type="hidden" name="events[31859][p_type]" value="4" rel="31859" class="events type"/>
+					<input type="hidden" name="events[31860][p_num]" value="41" rel="31860" class="events num"/>
+			<input type="hidden" name="events[31860][p_x]" value="388" rel="31860" class="events x"/>
+			<input type="hidden" name="events[31860][p_y]" value="771" rel="31860" class="events y"/>
+			<input type="hidden" name="events[31860][p_type]" value="4" rel="31860" class="events type"/>
+					<input type="hidden" name="events[31861][p_num]" value="42" rel="31861" class="events num"/>
+			<input type="hidden" name="events[31861][p_x]" value="416" rel="31861" class="events x"/>
+			<input type="hidden" name="events[31861][p_y]" value="779" rel="31861" class="events y"/>
+			<input type="hidden" name="events[31861][p_type]" value="4" rel="31861" class="events type"/>
+					<input type="hidden" name="events[31862][p_num]" value="43" rel="31862" class="events num"/>
+			<input type="hidden" name="events[31862][p_x]" value="451" rel="31862" class="events x"/>
+			<input type="hidden" name="events[31862][p_y]" value="770" rel="31862" class="events y"/>
+			<input type="hidden" name="events[31862][p_type]" value="4" rel="31862" class="events type"/>
+					<input type="hidden" name="events[31863][p_num]" value="44" rel="31863" class="events num"/>
+			<input type="hidden" name="events[31863][p_x]" value="482" rel="31863" class="events x"/>
+			<input type="hidden" name="events[31863][p_y]" value="774" rel="31863" class="events y"/>
+			<input type="hidden" name="events[31863][p_type]" value="4" rel="31863" class="events type"/>
+					<input type="hidden" name="events[31864][p_num]" value="45" rel="31864" class="events num"/>
+			<input type="hidden" name="events[31864][p_x]" value="546" rel="31864" class="events x"/>
+			<input type="hidden" name="events[31864][p_y]" value="811" rel="31864" class="events y"/>
+			<input type="hidden" name="events[31864][p_type]" value="4" rel="31864" class="events type"/>
+					<input type="hidden" name="events[31866][p_num]" value="47" rel="31866" class="events num"/>
+			<input type="hidden" name="events[31866][p_x]" value="575" rel="31866" class="events x"/>
+			<input type="hidden" name="events[31866][p_y]" value="815" rel="31866" class="events y"/>
+			<input type="hidden" name="events[31866][p_type]" value="4" rel="31866" class="events type"/>
+					<input type="hidden" name="events[31867][p_num]" value="48" rel="31867" class="events num"/>
+			<input type="hidden" name="events[31867][p_x]" value="145" rel="31867" class="events x"/>
+			<input type="hidden" name="events[31867][p_y]" value="216" rel="31867" class="events y"/>
+			<input type="hidden" name="events[31867][p_type]" value="4" rel="31867" class="events type"/>
+					<input type="hidden" name="events[31868][p_num]" value="49" rel="31868" class="events num"/>
+			<input type="hidden" name="events[31868][p_x]" value="485" rel="31868" class="events x"/>
+			<input type="hidden" name="events[31868][p_y]" value="277" rel="31868" class="events y"/>
+			<input type="hidden" name="events[31868][p_type]" value="4" rel="31868" class="events type"/>
+					<input type="hidden" name="events[31869][p_num]" value="50" rel="31869" class="events num"/>
+			<input type="hidden" name="events[31869][p_x]" value="62" rel="31869" class="events x"/>
+			<input type="hidden" name="events[31869][p_y]" value="887" rel="31869" class="events y"/>
+			<input type="hidden" name="events[31869][p_type]" value="4" rel="31869" class="events type"/>
+					<input type="hidden" name="events[32167][p_num]" value="51" rel="32167" class="events num"/>
+			<input type="hidden" name="events[32167][p_x]" value="91" rel="32167" class="events x"/>
+			<input type="hidden" name="events[32167][p_y]" value="887" rel="32167" class="events y"/>
+			<input type="hidden" name="events[32167][p_type]" value="4" rel="32167" class="events type"/>
+					<input type="hidden" name="events[32168][p_num]" value="52" rel="32168" class="events num"/>
+			<input type="hidden" name="events[32168][p_x]" value="122" rel="32168" class="events x"/>
+			<input type="hidden" name="events[32168][p_y]" value="888" rel="32168" class="events y"/>
+			<input type="hidden" name="events[32168][p_type]" value="4" rel="32168" class="events type"/>
+					<input type="hidden" name="events[32169][p_num]" value="53" rel="32169" class="events num"/>
+			<input type="hidden" name="events[32169][p_x]" value="151" rel="32169" class="events x"/>
+			<input type="hidden" name="events[32169][p_y]" value="886" rel="32169" class="events y"/>
+			<input type="hidden" name="events[32169][p_type]" value="4" rel="32169" class="events type"/>
+					<input type="hidden" name="events[32170][p_num]" value="54" rel="32170" class="events num"/>
+			<input type="hidden" name="events[32170][p_x]" value="182" rel="32170" class="events x"/>
+			<input type="hidden" name="events[32170][p_y]" value="886" rel="32170" class="events y"/>
+			<input type="hidden" name="events[32170][p_type]" value="4" rel="32170" class="events type"/>
+					<input type="hidden" name="events[32171][p_num]" value="55" rel="32171" class="events num"/>
+			<input type="hidden" name="events[32171][p_x]" value="215" rel="32171" class="events x"/>
+			<input type="hidden" name="events[32171][p_y]" value="887" rel="32171" class="events y"/>
+			<input type="hidden" name="events[32171][p_type]" value="4" rel="32171" class="events type"/>
+					<input type="hidden" name="events[32172][p_num]" value="56" rel="32172" class="events num"/>
+			<input type="hidden" name="events[32172][p_x]" value="245" rel="32172" class="events x"/>
+			<input type="hidden" name="events[32172][p_y]" value="889" rel="32172" class="events y"/>
+			<input type="hidden" name="events[32172][p_type]" value="4" rel="32172" class="events type"/>
+					<input type="hidden" name="events[32173][p_num]" value="57" rel="32173" class="events num"/>
+			<input type="hidden" name="events[32173][p_x]" value="274" rel="32173" class="events x"/>
+			<input type="hidden" name="events[32173][p_y]" value="890" rel="32173" class="events y"/>
+			<input type="hidden" name="events[32173][p_type]" value="4" rel="32173" class="events type"/>
+					<input type="hidden" name="events[32174][p_num]" value="58" rel="32174" class="events num"/>
+			<input type="hidden" name="events[32174][p_x]" value="304" rel="32174" class="events x"/>
+			<input type="hidden" name="events[32174][p_y]" value="891" rel="32174" class="events y"/>
+			<input type="hidden" name="events[32174][p_type]" value="4" rel="32174" class="events type"/>
+					<input type="hidden" name="events[32175][p_num]" value="59" rel="32175" class="events num"/>
+			<input type="hidden" name="events[32175][p_x]" value="334" rel="32175" class="events x"/>
+			<input type="hidden" name="events[32175][p_y]" value="891" rel="32175" class="events y"/>
+			<input type="hidden" name="events[32175][p_type]" value="4" rel="32175" class="events type"/>
+					<input type="hidden" name="events[32176][p_num]" value="60" rel="32176" class="events num"/>
+			<input type="hidden" name="events[32176][p_x]" value="366" rel="32176" class="events x"/>
+			<input type="hidden" name="events[32176][p_y]" value="894" rel="32176" class="events y"/>
+			<input type="hidden" name="events[32176][p_type]" value="4" rel="32176" class="events type"/>
+					<input type="hidden" name="events[32177][p_num]" value="61" rel="32177" class="events num"/>
+			<input type="hidden" name="events[32177][p_x]" value="396" rel="32177" class="events x"/>
+			<input type="hidden" name="events[32177][p_y]" value="891" rel="32177" class="events y"/>
+			<input type="hidden" name="events[32177][p_type]" value="4" rel="32177" class="events type"/>
+					<input type="hidden" name="events[32178][p_num]" value="62" rel="32178" class="events num"/>
+			<input type="hidden" name="events[32178][p_x]" value="424" rel="32178" class="events x"/>
+			<input type="hidden" name="events[32178][p_y]" value="893" rel="32178" class="events y"/>
+			<input type="hidden" name="events[32178][p_type]" value="4" rel="32178" class="events type"/>
+					<input type="hidden" name="events[32179][p_num]" value="63" rel="32179" class="events num"/>
+			<input type="hidden" name="events[32179][p_x]" value="52" rel="32179" class="events x"/>
+			<input type="hidden" name="events[32179][p_y]" value="216" rel="32179" class="events y"/>
+			<input type="hidden" name="events[32179][p_type]" value="4" rel="32179" class="events type"/>
+					<input type="hidden" name="events[32180][p_num]" value="64" rel="32180" class="events num"/>
+			<input type="hidden" name="events[32180][p_x]" value="673" rel="32180" class="events x"/>
+			<input type="hidden" name="events[32180][p_y]" value="991" rel="32180" class="events y"/>
+			<input type="hidden" name="events[32180][p_type]" value="4" rel="32180" class="events type"/>
+					<input type="hidden" name="events[32181][p_num]" value="65" rel="32181" class="events num"/>
+			<input type="hidden" name="events[32181][p_x]" value="128" rel="32181" class="events x"/>
+			<input type="hidden" name="events[32181][p_y]" value="33" rel="32181" class="events y"/>
+			<input type="hidden" name="events[32181][p_type]" value="4" rel="32181" class="events type"/>
+					<input type="hidden" name="events[32182][p_num]" value="66" rel="32182" class="events num"/>
+			<input type="hidden" name="events[32182][p_x]" value="56" rel="32182" class="events x"/>
+			<input type="hidden" name="events[32182][p_y]" value="118" rel="32182" class="events y"/>
+			<input type="hidden" name="events[32182][p_type]" value="4" rel="32182" class="events type"/>
+					<input type="hidden" name="events[32183][p_num]" value="67" rel="32183" class="events num"/>
+			<input type="hidden" name="events[32183][p_x]" value="161" rel="32183" class="events x"/>
+			<input type="hidden" name="events[32183][p_y]" value="33" rel="32183" class="events y"/>
+			<input type="hidden" name="events[32183][p_type]" value="4" rel="32183" class="events type"/>
+					<input type="hidden" name="events[32185][p_num]" value="69" rel="32185" class="events num"/>
+			<input type="hidden" name="events[32185][p_x]" value="693" rel="32185" class="events x"/>
+			<input type="hidden" name="events[32185][p_y]" value="262" rel="32185" class="events y"/>
+			<input type="hidden" name="events[32185][p_type]" value="4" rel="32185" class="events type"/>
+					<input type="hidden" name="events[32186][p_num]" value="70" rel="32186" class="events num"/>
+			<input type="hidden" name="events[32186][p_x]" value="204" rel="32186" class="events x"/>
+			<input type="hidden" name="events[32186][p_y]" value="300" rel="32186" class="events y"/>
+			<input type="hidden" name="events[32186][p_type]" value="4" rel="32186" class="events type"/>
+					<input type="hidden" name="events[32552][p_num]" value="71" rel="32552" class="events num"/>
+			<input type="hidden" name="events[32552][p_x]" value="65" rel="32552" class="events x"/>
+			<input type="hidden" name="events[32552][p_y]" value="986" rel="32552" class="events y"/>
+			<input type="hidden" name="events[32552][p_type]" value="4" rel="32552" class="events type"/>
+					<input type="hidden" name="events[32553][p_num]" value="72" rel="32553" class="events num"/>
+			<input type="hidden" name="events[32553][p_x]" value="92" rel="32553" class="events x"/>
+			<input type="hidden" name="events[32553][p_y]" value="984" rel="32553" class="events y"/>
+			<input type="hidden" name="events[32553][p_type]" value="4" rel="32553" class="events type"/>
+					<input type="hidden" name="events[32554][p_num]" value="73" rel="32554" class="events num"/>
+			<input type="hidden" name="events[32554][p_x]" value="123" rel="32554" class="events x"/>
+			<input type="hidden" name="events[32554][p_y]" value="984" rel="32554" class="events y"/>
+			<input type="hidden" name="events[32554][p_type]" value="4" rel="32554" class="events type"/>
+					<input type="hidden" name="events[32555][p_num]" value="74" rel="32555" class="events num"/>
+			<input type="hidden" name="events[32555][p_x]" value="155" rel="32555" class="events x"/>
+			<input type="hidden" name="events[32555][p_y]" value="986" rel="32555" class="events y"/>
+			<input type="hidden" name="events[32555][p_type]" value="4" rel="32555" class="events type"/>
+					<input type="hidden" name="events[32556][p_num]" value="75" rel="32556" class="events num"/>
+			<input type="hidden" name="events[32556][p_x]" value="186" rel="32556" class="events x"/>
+			<input type="hidden" name="events[32556][p_y]" value="985" rel="32556" class="events y"/>
+			<input type="hidden" name="events[32556][p_type]" value="4" rel="32556" class="events type"/>
+					<input type="hidden" name="events[32557][p_num]" value="76" rel="32557" class="events num"/>
+			<input type="hidden" name="events[32557][p_x]" value="218" rel="32557" class="events x"/>
+			<input type="hidden" name="events[32557][p_y]" value="988" rel="32557" class="events y"/>
+			<input type="hidden" name="events[32557][p_type]" value="4" rel="32557" class="events type"/>
+					<input type="hidden" name="events[32558][p_num]" value="77" rel="32558" class="events num"/>
+			<input type="hidden" name="events[32558][p_x]" value="250" rel="32558" class="events x"/>
+			<input type="hidden" name="events[32558][p_y]" value="990" rel="32558" class="events y"/>
+			<input type="hidden" name="events[32558][p_type]" value="4" rel="32558" class="events type"/>
+					<input type="hidden" name="events[32559][p_num]" value="78" rel="32559" class="events num"/>
+			<input type="hidden" name="events[32559][p_x]" value="282" rel="32559" class="events x"/>
+			<input type="hidden" name="events[32559][p_y]" value="993" rel="32559" class="events y"/>
+			<input type="hidden" name="events[32559][p_type]" value="4" rel="32559" class="events type"/>
+					<input type="hidden" name="events[32560][p_num]" value="79" rel="32560" class="events num"/>
+			<input type="hidden" name="events[32560][p_x]" value="314" rel="32560" class="events x"/>
+			<input type="hidden" name="events[32560][p_y]" value="991" rel="32560" class="events y"/>
+			<input type="hidden" name="events[32560][p_type]" value="4" rel="32560" class="events type"/>
+					<input type="hidden" name="events[32561][p_num]" value="80" rel="32561" class="events num"/>
+			<input type="hidden" name="events[32561][p_x]" value="344" rel="32561" class="events x"/>
+			<input type="hidden" name="events[32561][p_y]" value="990" rel="32561" class="events y"/>
+			<input type="hidden" name="events[32561][p_type]" value="4" rel="32561" class="events type"/>
+					<input type="hidden" name="events[32562][p_num]" value="81" rel="32562" class="events num"/>
+			<input type="hidden" name="events[32562][p_x]" value="374" rel="32562" class="events x"/>
+			<input type="hidden" name="events[32562][p_y]" value="990" rel="32562" class="events y"/>
+			<input type="hidden" name="events[32562][p_type]" value="4" rel="32562" class="events type"/>
+					<input type="hidden" name="events[32563][p_num]" value="82" rel="32563" class="events num"/>
+			<input type="hidden" name="events[32563][p_x]" value="400" rel="32563" class="events x"/>
+			<input type="hidden" name="events[32563][p_y]" value="988" rel="32563" class="events y"/>
+			<input type="hidden" name="events[32563][p_type]" value="4" rel="32563" class="events type"/>
+					<input type="hidden" name="events[32564][p_num]" value="83" rel="32564" class="events num"/>
+			<input type="hidden" name="events[32564][p_x]" value="430" rel="32564" class="events x"/>
+			<input type="hidden" name="events[32564][p_y]" value="992" rel="32564" class="events y"/>
+			<input type="hidden" name="events[32564][p_type]" value="4" rel="32564" class="events type"/>
+					<input type="hidden" name="events[32565][p_num]" value="84" rel="32565" class="events num"/>
+			<input type="hidden" name="events[32565][p_x]" value="458" rel="32565" class="events x"/>
+			<input type="hidden" name="events[32565][p_y]" value="991" rel="32565" class="events y"/>
+			<input type="hidden" name="events[32565][p_type]" value="4" rel="32565" class="events type"/>
+					<input type="hidden" name="events[32566][p_num]" value="85" rel="32566" class="events num"/>
+			<input type="hidden" name="events[32566][p_x]" value="489" rel="32566" class="events x"/>
+			<input type="hidden" name="events[32566][p_y]" value="992" rel="32566" class="events y"/>
+			<input type="hidden" name="events[32566][p_type]" value="4" rel="32566" class="events type"/>
+					<input type="hidden" name="events[32567][p_num]" value="86" rel="32567" class="events num"/>
+			<input type="hidden" name="events[32567][p_x]" value="520" rel="32567" class="events x"/>
+			<input type="hidden" name="events[32567][p_y]" value="992" rel="32567" class="events y"/>
+			<input type="hidden" name="events[32567][p_type]" value="4" rel="32567" class="events type"/>
+					<input type="hidden" name="events[32568][p_num]" value="87" rel="32568" class="events num"/>
+			<input type="hidden" name="events[32568][p_x]" value="552" rel="32568" class="events x"/>
+			<input type="hidden" name="events[32568][p_y]" value="992" rel="32568" class="events y"/>
+			<input type="hidden" name="events[32568][p_type]" value="4" rel="32568" class="events type"/>
+					<input type="hidden" name="events[32569][p_num]" value="88" rel="32569" class="events num"/>
+			<input type="hidden" name="events[32569][p_x]" value="582" rel="32569" class="events x"/>
+			<input type="hidden" name="events[32569][p_y]" value="994" rel="32569" class="events y"/>
+			<input type="hidden" name="events[32569][p_type]" value="4" rel="32569" class="events type"/>
+					<input type="hidden" name="events[32570][p_num]" value="89" rel="32570" class="events num"/>
+			<input type="hidden" name="events[32570][p_x]" value="613" rel="32570" class="events x"/>
+			<input type="hidden" name="events[32570][p_y]" value="994" rel="32570" class="events y"/>
+			<input type="hidden" name="events[32570][p_type]" value="4" rel="32570" class="events type"/>
+					<input type="hidden" name="events[32571][p_num]" value="90" rel="32571" class="events num"/>
+			<input type="hidden" name="events[32571][p_x]" value="643" rel="32571" class="events x"/>
+			<input type="hidden" name="events[32571][p_y]" value="993" rel="32571" class="events y"/>
+			<input type="hidden" name="events[32571][p_type]" value="4" rel="32571" class="events type"/>
+					<input type="hidden" name="events[34090][p_num]" value="91" rel="34090" class="events num"/>
+			<input type="hidden" name="events[34090][p_x]" value="222" rel="34090" class="events x"/>
+			<input type="hidden" name="events[34090][p_y]" value="219" rel="34090" class="events y"/>
+			<input type="hidden" name="events[34090][p_type]" value="2" rel="34090" class="events type"/>
+					<input type="hidden" name="publish" value="0">
+			<input type="hidden" name="version_message" value="">
+		</form>
+	</div>
+	<div id="editor_canvas">
+		<div id="tip_box"></div>
+		<div id="canvas"></div>
+	</div>
+	</div>
+</div>
+</div>
+
+
+		</div>
+		<div id="footer-push"></div>
+	</div>
+<div id="footer">
+	<div class="in-1">
+		<div class="copyright">© 2010 - 2013 Kvester.ru</div>
+		<ul class="menu">
+				<li><a href="http://kvester.ru/news">Новости</a></li>
+					<li><a href="http://kvester.ru/contacts">Контакты</a></li>
+					<li><a href="http://kvester.ru/rules">Правила</a></li>
+			
+</ul>
+		
+		<div class="counters">
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl."
+: "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost +
+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15621708-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+		
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><!--/LiveInternet-->&nbsp;
+
+<!--Rating@Mail.ru counter-->
+<script language="javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer);js=10;//--></script>
+<script language="javascript1.1"><!--
+a+=';j='+navigator.javaEnabled();js=11;//--></script>
+<script language="javascript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height;
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script>
+<script language="javascript1.3"><!--
+js=13;//--></script><script language="javascript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=1818563" target="_top">'+
+'<img src="http://df.cb.bb.a1.top.mail.ru/counter?id=1818563;t=69;js='+js+
+a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" '+
+'height="31" width="38"><\/a>');if(11<js)d.write('<'+'!-- ');//--></script>
+<noscript><a target="_top" href="http://top.mail.ru/jump?from=1818563">
+<img src="http://df.cb.bb.a1.top.mail.ru/counter?js=na;id=1818563;t=69"
+height="31" width="38" border="0"
+alt="Рейтинг@Mail.ru"></a></noscript>
+<script language="javascript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>');//--></script>
+<!--// Rating@Mail.ru counter-->
+
+		
+		</div>
+	</div>
+</div>
+<div id="popup">
+	<div class="overlay"></div>
+	<table class="popup-table">
+		<tbody>
+			<tr>
+				<td class="popup-td">
+					<div class="wnd">
+						<div class="close" title="Закрыть"><span class="icon"></span></div>
+						<div class="header">Регистрация на сайте</div>
+						<div class="popup-content"><!-- контент сюда будет загружен скриптом --></div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div id="popup_tpl" style="display:none;">
+	<!-- Шаблоны всплывающих окон -->
+	<div class="registration">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="votes">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="team">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="plays">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="versions">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="copy">
+	<!-- контент сюда будет загружен аяксом -->
+	</div>
+	<div class="login">
+		Вы уже успешно авторизованы
+
+	</div>
+    <div class="new_game">
+    <p class="selecter">
+        <a href="javascript:void(0);" onclick="$('#new_quest_engine').val(2); $('#popup').hide();">Конструктор v.2</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="javascript:void(0);" onclick="$('#new_quest_engine').val(3); $('#popup').hide();">Конструктор v.3 (beta)</a>
+    </p>
+    </div>
+	<div class="operation">
+		<form class="message-form" method="POST">
+			<p class="errors"></p>
+			<div class="form-row">
+				<div class="label">Комментарий:</div>
+				<div class="input">
+					<textarea style="width:636px;" name="message"></textarea>
+				</div>
+			</div>
+			<div class="submit-row-2">
+				<div class="submit"><label><input type="submit"></label></div>
+			</div>
+		</form>
+	</div>
+	<div class="projects" method="post">
+		<form class="message-form" method="POST">
+			<p class="errors"></p>
+			<div class="form-row">
+				<div class="label">Рубрика:</div>
+				<div class="input">
+					<select name="project">
+					<option value="1">Квесты</option><option value="5">RPG</option><option value="6">Стратегии</option><option value="7">Рассказы-игры</option><option value="8">Тесты</option><option value="11">Симуляторы</option><option value="13">Мини-игры</option><option value="14">Разное</option>					</select>
+				</div>
+			</div>
+			<div class="submit-row-2">
+				<div class="submit"><label><input type="submit"></label></div>
+			</div>
+		</form>
+	</div>
+	<div class="message">
+		<form class="message-form" onsubmit="return message_submit(this);">
+			<p class="errors"></p>
+			<input type="hidden" name="to" value="">			
+			<input type="hidden" name="send" value="send">
+			<div class="form-row">
+				<div class="label">Тема:</div>
+				<div class="input">
+					<input class="inputText" style="width:216px;" type="text" name="subject" value="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="label">Сообщение:</div>
+				<div class="input">
+					<textarea style="width:636px;" name="message"></textarea>
+				</div>
+			</div>
+			<div class="submit-row-2">
+				<div class="submit"><label><input type="submit"></label></div>
+			</div>
+		</form>
+	</div>
+	<div class="friends">
+		<form class="message-form" onsubmit="return message_submit(this);">
+			<p class="errors"></p>
+			<input type="hidden" name="to" value="">						
+			<input type="hidden" name="relation" value="relation">			
+			<div class="form-row">
+				<div class="label">Сообщение:</div>
+				<div class="input">
+					<textarea style="width:636px;" name="message"></textarea>
+				</div>
+			</div>
+			<div class="submit-row-2">
+				<div class="submit"><label><input type="submit"></label></div>
+			</div>
+		</form>
+	</div>
+	<div class="notify">
+			</div>
+	<!-- Шаблоны всплывающих окон -->
+</div>
+</body>
+</html>

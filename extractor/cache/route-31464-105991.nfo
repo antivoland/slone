@@ -1,0 +1,128 @@
+<div class="step">
+	<div class="icon-delete" onclick="$(this).parent().remove(); return false;"></div>
+	
+	<div class="step-content">
+		<div class="step-header">
+			<input type="hidden" value="a:5:{s:14:\&quot;inventory_type\&quot;;s:1:\&quot;1\&quot;;s:11:\&quot;inventories\&quot;;a:1:{i:0;s:4:\&quot;2394\&quot;;}s:13:\&quot;counters_type\&quot;;s:1:\&quot;0\&quot;;s:11:\&quot;to_be_saved\&quot;;s:1:\&quot;1\&quot;;s:8:\&quot;counters\&quot;;N;}" name="links[105991][visible]" class="visible">
+			<input type="hidden" value="" name="links[105991][cvisible]" class="cvisible">
+			<input type="hidden" value="" name="links[105991][type_cvisible]" class="type_cvisible">
+			<input type="hidden" value="" name="links[105991][type_visible]" class="type_visible">
+			<div class="step-icon1" style="background-color:#ff8a00;" onclick="loadVisibleForm(this,'2251');"></div>
+			<div class="title">
+				<input type="text" class="text" value="Идти направо" name="links[105991][name]" style="width: 197px;">
+			</div>
+			<div class="select-wrap close">
+				<div class="left-col">
+					<select name="links[105991][action]" class="condition_type" onchange="changeStepAction(this,'2251','31464','105991');">
+											<option value="M" selected="selected">Действие</option>
+											<option value="I">Условия</option>
+											<option value="C">Проверить</option>
+											<option value="R">Случайно</option>
+											<option value="T">Счетчик</option>
+										</select>
+				</div>				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="step-params">
+			<input type="hidden" name="action[105991][0][id]" value="78280">
+			<input type="hidden" name="action[105991][0][counters]" value="" class="counters">
+			<div class="step-icon2 typeT" style="background-color:#37A3E3; display: none;" onclick="loadCountersForm(this,'2251');"></div>
+			<select name="action[105991][0][type]" class="action_type" onchange="changeActionType(this);">
+				<option value="M" selected="selected">Переход</option>
+				<option value="T">Сообщение</option>
+			</select>
+			<select name="action[105991][0][id_point]" class="typeM point_selector" onchange="createNewPoint(this)">
+				<option value="">Выбрать точку</option>
+																			<option value="31335">start</option>
+																								<option value="31404">8</option>
+																								<option value="31407" selected="selected">9</option>
+																								<option value="31408">10</option>
+																								<option value="31411">11</option>
+																								<option value="31416">12</option>
+																								<option value="31447">13</option>
+																								<option value="31451">14</option>
+																								<option value="31452">15</option>
+																								<option value="31453">16</option>
+																								<option value="31454">17</option>
+																								<option value="31463">18</option>
+																																						<option value="31492">20</option>
+																								<option value="31511">21</option>
+																								<option value="31542">22</option>
+																								<option value="31544">23</option>
+																								<option value="31545">24</option>
+																								<option value="31546">25</option>
+																								<option value="31747">26</option>
+																								<option value="31846">27</option>
+																								<option value="31847">28</option>
+																								<option value="31848">29</option>
+																								<option value="31850">31</option>
+																								<option value="31851">32</option>
+																								<option value="31852">33</option>
+																								<option value="31853">34</option>
+																								<option value="31854">35</option>
+																								<option value="31855">36</option>
+																								<option value="31856">37</option>
+																								<option value="31857">38</option>
+																								<option value="31858">39</option>
+																								<option value="31859">40</option>
+																								<option value="31860">41</option>
+																								<option value="31861">42</option>
+																								<option value="31862">43</option>
+																								<option value="31863">44</option>
+																								<option value="31864">45</option>
+																								<option value="31866">47</option>
+																								<option value="31867">48</option>
+																								<option value="31868">49</option>
+																								<option value="31869">50</option>
+																								<option value="32167">51</option>
+																								<option value="32168">52</option>
+																								<option value="32169">53</option>
+																								<option value="32170">54</option>
+																								<option value="32171">55</option>
+																								<option value="32172">56</option>
+																								<option value="32173">57</option>
+																								<option value="32174">58</option>
+																								<option value="32175">59</option>
+																								<option value="32176">60</option>
+																								<option value="32177">61</option>
+																								<option value="32178">62</option>
+																								<option value="32179">63</option>
+																								<option value="32180">64</option>
+																								<option value="32181">65</option>
+																								<option value="32182">66</option>
+																								<option value="32183">67</option>
+																								<option value="32185">69</option>
+																								<option value="32186">70</option>
+																								<option value="32552">71</option>
+																								<option value="32553">72</option>
+																								<option value="32554">73</option>
+																								<option value="32555">74</option>
+																								<option value="32556">75</option>
+																								<option value="32557">76</option>
+																								<option value="32558">77</option>
+																								<option value="32559">78</option>
+																								<option value="32560">79</option>
+																								<option value="32561">80</option>
+																								<option value="32562">81</option>
+																								<option value="32563">82</option>
+																								<option value="32564">83</option>
+																								<option value="32565">84</option>
+																								<option value="32566">85</option>
+																								<option value="32567">86</option>
+																								<option value="32568">87</option>
+																								<option value="32569">88</option>
+																								<option value="32570">89</option>
+																								<option value="32571">90</option>
+																								<option value="34090">91</option>
+														<option value="new">new</option>
+			</select>
+			<img class="step-icon5 typeT" src="/skins/default/images/constr_icon5.png" style="background-color: #ff0000; display: none;" onclick="loadMessageForm(this);">
+			<textarea name="action[105991][0][message]" style="display: none;"></textarea>
+			<label style="margin-top:8px; display: none;" class="typeT">
+				<input value="1" name="action[105991][0][hide]" type="checkbox"> - после действия скрыть шаг</label>
+			<div class="step-icon2 typeM" style="background-color:#37A3E3;" onclick="loadCountersForm(this,'2251');"></div>
+		</div>
+	</div>
+</div>
+

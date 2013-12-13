@@ -1,0 +1,103 @@
+<ul class="keditor_set_list">
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2344');">Сырный пирог</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2344');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2342');">Дедушкины часы</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2342');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2343');">Гаечный ключ</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2343');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2394');">_болото осушено</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2394');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2358');">_вход завален</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2358');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2377');">Колесо</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2377');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2422');">Вагонетка с мотором</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2422');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2432');">_электричество есть</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2432');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2482');">_познакомился с кротом</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2482');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2483');">_знаешь про землекопалку</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2483');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2484');">_познакомился с мышонком</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2484');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2485');">_отдал кроту пирог</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2485');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2486');">Вагонетка</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2486');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2497');">_нашел электростанцию</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2497');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2515');">_нужен рычаг</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2515');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2516');">_знаешь что вход завалило</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2516');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2571');">Синие грибы</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2571');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2572');">_топливо есть</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2572');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2609');">_вагон открыт</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2609');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2610');">Ключ шахтера</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2610');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2625');">Мотор</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2625');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2662');">Каска</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2662');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','2696');">_попробовал пирог</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','2696');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editInventory('2251','3044');">!тестовая залупа</span>
+		<span class="keditor_set_icon_del" onclick="delInventory('2251','3044');"></span>
+	</li>
+		</ul>
+	<div class="keditor_hr"></div>
+	<div class="keditor_set_add_link">
+		<span class="keditor_link" onclick="editInventory('2251','0'); return false;">Добавить условие</span>
+	</div>
+

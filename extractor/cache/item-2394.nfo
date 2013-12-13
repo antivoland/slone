@@ -1,0 +1,11 @@
+		<form id="quest_inventory_form">
+	<div class="condition-wrap">
+		<div class="input"><input type="text" name="inventory[name]" value="_болото осушено"></div>
+		<p><label><input type="checkbox" name="inventory[show]" value="1"> - показывать в игре</label></p>
+		<p><label><input type="checkbox" name="inventory[start]" value="1"> - присвоить при старте</label></p>
+		<div class="submit">
+			<a class="button_submit" href="#" onclick="saveInventory('2251','2394'); return false;">Сохранить</a>
+		</div>
+	</div>
+	</form>
+

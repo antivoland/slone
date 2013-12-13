@@ -1,0 +1,70 @@
+<form id="edit_form" method="post">
+	<script type="text/javascript">
+	
+	/* Скрываем точки, чтоб нельзя было в саму себя направлять */
+	var max_condition = 0;
+	var refresh_selects = function() {
+		var has_been_selected = false;
+		$('select.link_select option').show();
+		$('select.link_select').each(function(){
+			$(this).find('option:selected').each(function(){
+				if ($(this).val()) {
+					$('select.link_select option[value='+$(this).val()+']').hide();
+					$(this).show();				
+				}
+			});
+		});
+	};
+	
+	var update_link_selects = function(el) {	
+		if ($(el).val()=='new') {
+			$('#editor_popup_choose').dialog({modal: true, dialogClass: 'modal', width: 125, minHeight: 70});
+			$('#editor_popup_choose').css('width',125);
+			$('.modal .ui-dialog-titlebar').hide();
+			var position = $(el).offset();
+			$("#editor_popup_choose").parent().css('top',position.top);
+			$("#editor_popup_choose").parent().css('left',position.left);
+		}		
+		refresh_selects();
+	};
+	
+</script>
+	<input type="hidden" name="id" value="31846">
+	<input type="hidden" name="mode" value="save">
+	<input type="hidden" name="cvisible" value="" class="cvisible">
+	<div class="fishka_container top_fishka">
+								<div class="fishka ifpoint" rel="4">27</div>				<div class="counter_visible" onclick="loadCountersVisibleForm(this,'2251');"></div>
+			</div>	
+	<div class="form">
+		<label>Название</label>
+		<input type="text" class="text" name="name" value="Лифт" style="margin-bottom: 6px;">
+		<div class="clear"></div>
+		<input type="hidden" name="image" value="8572" id="point_image" />
+					<img src="/var/images/quest/data/fpreview/2251/image8572_preview.jpg" id="point_image_src" width="100" style="float: left;">
+			<a href="javascript:void(0);" onclick="del_point_image();" id="point_image_del"><img src="/skins/default/images/delete_step_line.jpg" width="11" height="11" alt="x"></a>
+				<div class="clear"></div>
+		<a href="javascript:void(0)" onclick="loadGallery(2251);" id="change_point_image">Добавить/заменить картинку</a>
+		<br><br>
+		<label>Текст</label>
+		<textarea cols="20" rows="5" name="descr">Так что, едем домой? Сомневаюсь, что я потом смогу вернуться обратно.</textarea>
+					<br><br>
+			<label>Следующие шаги:</label>
+			<div class="hr"></div>			
+						<script type="text/javascript">
+				loadIfStep('2251','31846','106010');
+			</script>
+			<div style="display: none;" id="insert_action_106010"></div>
+						<script type="text/javascript">
+				loadIfStep('2251','31846','106011');
+			</script>
+			<div style="display: none;" id="insert_action_106011"></div>
+						
+			<div class="form_add_step">
+				<div class="step-icon3" style="background-color:#37a3e3;" onclick="addIfStep('2251','31846')"></div>
+			</div>
+				<div class="form_buttons">
+			<a class="button_submit" href="#" onclick="savePoint('2251'); return false;">Сохранить</a>
+            			<a class="button_submit warning" href="#" onclick="$('#edit_form input[name=mode]').val('del'); savePoint('2251'); return false;">Удалить</a>
+            		</div>
+	</div>
+</form>

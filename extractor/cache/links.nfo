@@ -1,0 +1,15 @@
+<ul class="keditor_set_list">
+		<li>
+		<span class="keditor_link" onclick="editLink('2251','640');">Поставить на вагонетку мотор</span>
+		<span class="keditor_set_icon_del" onclick="delLink('2251','640');"></span>
+	</li>
+		<li>
+		<span class="keditor_link" onclick="editLink('2251','748');">Тестовая залупа</span>
+		<span class="keditor_set_icon_del" onclick="delLink('2251','748');"></span>
+	</li>
+		</ul>
+	<div class="keditor_hr"></div>
+	<div class="keditor_set_add_link">
+		<span class="keditor_link" onclick="editLink('2251','0'); return false;">Добавить ссылку</span>
+	</div>
+

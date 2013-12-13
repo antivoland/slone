@@ -1,0 +1,48 @@
+<form method="POST" id="condition_visible_form">
+<table width="100%">
+<tr valign="top"><td width="50%">
+<h4>Зависимость от условий:</h4>
+<select name="inventory_type">
+	<option value="0" selected="selected">Показывать если:</option>
+	<option value="1">Не показывать если:</option>
+</select><br/>
+	<label><input type="checkbox" value="2344" class="inventory" name="inventories[]">Сырный пирог</label><br/>
+	<label><input type="checkbox" value="2342" class="inventory" name="inventories[]">Дедушкины часы</label><br/>
+	<label><input type="checkbox" value="2343" class="inventory" name="inventories[]">Гаечный ключ</label><br/>
+	<label><input type="checkbox" value="2394" class="inventory" name="inventories[]">_болото осушено</label><br/>
+	<label><input type="checkbox" value="2358" class="inventory" name="inventories[]">_вход завален</label><br/>
+	<label><input type="checkbox" value="2377" class="inventory" name="inventories[]">Колесо</label><br/>
+	<label><input type="checkbox" value="2422" class="inventory" name="inventories[]">Вагонетка с мотором</label><br/>
+	<label><input type="checkbox" value="2432" class="inventory" name="inventories[]">_электричество есть</label><br/>
+	<label><input type="checkbox" value="2482" class="inventory" name="inventories[]">_познакомился с кротом</label><br/>
+	<label><input type="checkbox" value="2483" class="inventory" name="inventories[]">_знаешь про землекопалку</label><br/>
+	<label><input type="checkbox" value="2484" class="inventory" name="inventories[]">_познакомился с мышонком</label><br/>
+	<label><input type="checkbox" value="2485" class="inventory" name="inventories[]">_отдал кроту пирог</label><br/>
+	<label><input type="checkbox" value="2486" class="inventory" name="inventories[]">Вагонетка</label><br/>
+	<label><input type="checkbox" value="2497" class="inventory" name="inventories[]">_нашел электростанцию</label><br/>
+	<label><input type="checkbox" value="2515" class="inventory" name="inventories[]">_нужен рычаг</label><br/>
+	<label><input type="checkbox" value="2516" class="inventory" name="inventories[]">_знаешь что вход завалило</label><br/>
+	<label><input type="checkbox" value="2571" checked="checked" class="inventory" name="inventories[]">Синие грибы</label><br/>
+	<label><input type="checkbox" value="2572" class="inventory" name="inventories[]">_топливо есть</label><br/>
+	<label><input type="checkbox" value="2609" class="inventory" name="inventories[]">_вагон открыт</label><br/>
+	<label><input type="checkbox" value="2610" class="inventory" name="inventories[]">Ключ шахтера</label><br/>
+	<label><input type="checkbox" value="2625" class="inventory" name="inventories[]">Мотор</label><br/>
+	<label><input type="checkbox" value="2662" class="inventory" name="inventories[]">Каска</label><br/>
+	<label><input type="checkbox" value="2696" class="inventory" name="inventories[]">_попробовал пирог</label><br/>
+	<label><input type="checkbox" value="3044" class="inventory" name="inventories[]">!тестовая залупа</label><br/>
+</div>
+</td><td>
+	<h4>Зависимость от счетчиков:</h4>
+<select name="counters_type">
+	<option value="0" selected="selected">Показывать если:</option>
+	<option value="1">Не показывать если:</option>
+</select>
+<select id="cvisible_counters_to_be_cloned" style="display: none;">
+	</select>
+<p><a href="javascript: void(0);" onclick="addCounterVisible(this,2251); return false;">Добавить счетчик</a></p>
+</td></tr></table>
+<input type="hidden" name="to_be_saved" value="0" />
+<div class="form_buttons">
+	<a class="button_submit" href="#" onclick="$('#point_visible input[name=to_be_saved]').val(1); $('#point_visible').dialog('close'); return false;">Сохранить</a>
+</div>
+</form>
