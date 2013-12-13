@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ru.antimiaou.slone</groupId>
+    <artifactId>slone-game</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>swf</packaging>
+    <name>Slone game</name>
+    <url>http://antimiaou.ru/dev/slone/game/</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <pom.xml.flexmojos.version>3.8</pom.xml.flexmojos.version>
+        <pom.xml.flexsdk.version>4.6.b.23201</pom.xml.flexsdk.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <pom.xml.flexcompiler.debug>true</pom.xml.flexcompiler.debug>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <pom.xml.flexcompiler.debug>true</pom.xml.flexcompiler.debug>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <pom.xml.flexcompiler.debug>false</pom.xml.flexcompiler.debug>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <finalName>slone-game</finalName>
+        <sourceDirectory>src/main/actionscript</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.flexmojos</groupId>
+                <artifactId>flexmojos-maven-plugin</artifactId>
+                <version>${pom.xml.flexmojos.version}</version>
+                <extensions>true</extensions>
+
+                <configuration>
+                    <sourceFile>ru/antimiaou/slone/game/Main.as</sourceFile>
+                    <output>${project.build.directory}/${project.build.finalName}.swf</output>
+                    <configurationReport>true</configurationReport>
+                    <skipTest>true</skipTest>
+                    <storepass/>
+                    <staticLinkRuntimeSharedLibraries>true</staticLinkRuntimeSharedLibraries>
+                    <optimize>true</optimize>
+                    <debug>${pom.xml.flexcompiler.debug}</debug>
+                    <useNetwork>false</useNetwork>
+                    <keepAs3Metadatas>
+                        <keepAs3Metadata>JsonConstructor</keepAs3Metadata>
+                        <keepAs3Metadata>JsonProperty</keepAs3Metadata>
+                    </keepAs3Metadatas>
+                    <warnings>
+                        <noConstructor>false</noConstructor>
+                    </warnings>
+                </configuration>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>com.adobe.flex</groupId>
+                        <artifactId>compiler</artifactId>
+                        <version>${pom.xml.flexsdk.version}</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.flex.framework</groupId>
+            <artifactId>flex-framework</artifactId>
+            <version>${pom.xml.flexsdk.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.junkbyte</groupId>
+            <artifactId>console</artifactId>
+            <version>2.7-beta</version>
+            <type>swc</type>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <!-- com.adobe.flex.framework:flex-framework -->
+        <repository>
+            <id>repository.sonatype.org</id>
+            <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <!-- com.junkbyte:console -->
+        <repository>
+            <id>artifactory.flexis.ru</id>
+            <url>http://artifactory.flexis.ru:8030/artifactory/flexis-local/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>flex-mojos-plugin</id>
+            <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

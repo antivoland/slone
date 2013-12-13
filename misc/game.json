@@ -1,0 +1,4061 @@
+{
+    "nodes": [
+        {
+            "id": "31335",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8724_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31335",
+                    "edge": {
+                        "type": "M",
+                        "name": "Предыстория",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32181"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31335",
+                    "edge": {
+                        "type": "M",
+                        "name": "Начать игру",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32182"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31404",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8559_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31404",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31463"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31404",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть насос",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2394"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31404",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть насос",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2394"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31404",
+                    "edge": {
+                        "type": "I",
+                        "name": "Покрутить вентиль",
+                        "addInventories": ["2515"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2343"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31404",
+                    "edge": {
+                        "type": "I",
+                        "name": "Покрутить вентиль гаечным ключом",
+                        "addInventories": ["2358", "2394"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2343"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31407",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8561_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31408"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2484"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2484"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с мышонком",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2484"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31407",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с Мышонком",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2484"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31408",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8563_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31408",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31408",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть болото",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31408",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нырнуть в болото и поискать часы",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32185"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31408",
+                    "edge": {
+                        "type": "M",
+                        "name": "Бросить в болото сырный пирог",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2344"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31408",
+                    "edge": {
+                        "type": "M",
+                        "name": "Бросить в болото гаечный ключ",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2343"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31411",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8567_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подняться наверх",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31454"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подойти к странной штуковине",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31864"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2483"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подойти к землекопалке",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31864"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2483"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Стащить ящик с инструментами",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31866"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2515"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с кротом",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31411",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с Кротом",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2482"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31416",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8556_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31416",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32182"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31416",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31463"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31447",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8564_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31447",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31447",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31447",
+                    "edge": {
+                        "type": "I",
+                        "name": "Обыскать дно",
+                        "addInventories": ["2342"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31447",
+                    "edge": {
+                        "type": "M",
+                        "name": "Обыскать дно",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2342"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31451",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8572_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31453"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть лифт",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2432"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть лифт",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2432"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "I",
+                        "name": "Обыскать мертвеца",
+                        "addInventories": ["2610"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2610"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "M",
+                        "name": "Обыскать мертвеца",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2610"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31451",
+                    "edge": {
+                        "type": "C",
+                        "name": "Воспользоваться лифтом",
+                        "conditions": ["2342"],
+                        "successAction": {
+                            "type": "M",
+                            "nodeTo": "31846"
+                        },
+                        "failAction": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2432"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31452",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8570_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31453"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "I",
+                        "name": "Осмотреть станцию",
+                        "addInventories": ["2497"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2432"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть станцию",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2432"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "M",
+                        "name": "Покрутить что-нибудь гаечным ключом",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2432"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "I",
+                        "name": "Положить грибы в контейнер для топлива",
+                        "addInventories": ["2572"],
+                        "subInventories": ["2571"],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2571"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "M",
+                        "name": "Запустить станцию",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2572"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31452",
+                    "edge": {
+                        "type": "I",
+                        "name": "Запустить станцию",
+                        "addInventories": ["2432"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2572"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31453",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8569_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поехать обратно по тоннелю",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31454"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31451"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31452"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2497"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31452"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2497"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "I",
+                        "name": "Заглянуть в ящик",
+                        "addInventories": ["2662"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2662"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Заглянуть в ящик",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2662"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31453",
+                    "edge": {
+                        "type": "M",
+                        "name": "Рассмотреть плакат",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31454",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8606_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "C",
+                        "name": "Идти налево",
+                        "conditions": ["2394"],
+                        "successAction": {
+                            "type": "M",
+                            "nodeTo": "31492"
+                        },
+                        "failAction": {
+                            "type": "M",
+                            "nodeTo": "31747"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти по тоннелю",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2422"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поехать по тоннелю на вагонетке",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2486"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поехать по тоннелю на вагонетке",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31453"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2422"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть шлагбаум",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31454",
+                    "edge": {
+                        "type": "I",
+                        "name": "Попробовать разобрать шлагбаум",
+                        "addInventories": ["2625"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2343"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31463",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8605_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31463",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31416"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2358"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31463",
+                    "edge": {
+                        "type": "I",
+                        "name": "Идти налево",
+                        "addInventories": ["2516"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31511"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2358"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31463",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31404"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31463",
+                    "edge": {
+                        "type": "M",
+                        "name": "Спуститься вниз",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31463",
+                    "edge": {
+                        "type": "M",
+                        "name": "Рассмотреть плакат",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31464",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8560_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подняться наверх",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31463"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2394"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2394"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Спуститься вниз",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "C",
+                        "name": "Спуститься вниз",
+                        "conditions": ["2394"],
+                        "successAction": {
+                            "type": "M",
+                            "nodeTo": "31492"
+                        },
+                        "failAction": {
+                            "type": "M",
+                            "nodeTo": "31747"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть вагон",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Открыть вагон",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2610"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "I",
+                        "name": "Открыть вагон ключом шахтера",
+                        "addInventories": ["2571"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2610"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31464",
+                    "edge": {
+                        "type": "M",
+                        "name": "Откусить гриб",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32186"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31492",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8565_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31492",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подняться наверх",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31492",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31454"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31492",
+                    "edge": {
+                        "type": "M",
+                        "name": "Включить землекопалку",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31492",
+                    "edge": {
+                        "type": "I",
+                        "name": "Взять вагонетку",
+                        "addInventories": ["2486"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31511",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8557_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31511",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вернуться в пещеры",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31463"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31511",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть завал",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31511",
+                    "edge": {
+                        "type": "M",
+                        "name": "Разобрать завал",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31542",
+            "name": "Болото оказалось намного глубже, чем предполагал Слоник. Он попытался выбраться, но болото затягивало его все глубже и глубже...",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8607_preview.jpg",
+            "descr": null,
+            "routes": []
+        },
+        {
+            "id": "31544",
+            "name": "Слоник откусил гриб, но тут же подавился\r\nи упал на землю. Гриб оказался ядовитым.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8608_preview.jpg",
+            "descr": null,
+            "routes": []
+        },
+        {
+            "id": "31545",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8650_preview.jpg",
+            "descr": null,
+            "routes": []
+        },
+        {
+            "id": "31546",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8650_preview.jpg",
+            "descr": null,
+            "routes": []
+        },
+        {
+            "id": "31747",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8566_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31747",
+                    "edge": {
+                        "type": "M",
+                        "name": "Подняться наверх",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31747",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31454"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31747",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с Кротом",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31747",
+                    "edge": {
+                        "type": "I",
+                        "name": "Стащить из ящика с инструментами гаечный ключ",
+                        "addInventories": ["2343"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": true
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31747",
+                    "edge": {
+                        "type": "M",
+                        "name": "Включить землекопалку",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31864"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31846",
+            "name": "Так что, едем домой? Сомневаюсь, что я потом смогу вернуться обратно.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8572_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31846",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да. Здесь нам больше делать нечего.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31848"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31846",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нет, вообще-то у меня остались еще кое-какие дела.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31451"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31847",
+            "name": "",
+            "imageUrl": null,
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31847",
+                    "edge": {
+                        "type": "I",
+                        "name": "Присвоить электричество есть и топливо есть, дать вагонетку и колесо",
+                        "addInventories": ["2377", "2572", "2432", "2486"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "T",
+                            "message": "ы",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31847",
+                    "edge": {
+                        "type": "C",
+                        "name": "Проверить письку",
+                        "conditions": ["2483", "2572", "2432"],
+                        "successAction": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        },
+                        "failAction": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31847",
+                    "edge": {
+                        "type": "M",
+                        "name": "Назад",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31335"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31848",
+            "name": "Слоник вошел в лифт и нажал кнопку.\r\n— Слава богу, я больше не увижу эти мерзкие пещеры.\r\nДвери закрылись, лифт некоторое время постоял на месте и медленно поехал наверх.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8574_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31848",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32179"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31850",
+            "name": "Я тебя внимательно слушаю.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "I",
+                        "name": "Кто ты?",
+                        "addInventories": ["2482"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31851"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "I",
+                        "name": "Что ты делаешь?",
+                        "addInventories": ["2483"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31854"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2483"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "M",
+                        "name": "Как продвигается работа над землекопалкой?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31855"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2483"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "M",
+                        "name": "У меня есть сырный пирог. Не хочешь перекусить?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31862"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2482", "2483", "2344"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "M",
+                        "name": "Кто такие грибные братья?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31863"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31850",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не обращай внимания.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31851",
+            "name": "Я Крот. Разве не видно?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31851",
+                    "edge": {
+                        "type": "M",
+                        "name": "И чем ты занимаешься, Крот?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31854"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31851",
+                    "edge": {
+                        "type": "M",
+                        "name": "Странное имя «Крот»",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31852"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31851",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не видно. Ты же слепой крот!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31861"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31851",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ладно, Крот, мне пора",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31852",
+            "name": "Да ты что? А какое не странное? «Слон»?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8685_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31852",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вообще-то «Слоник»",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31853"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31852",
+                    "edge": {
+                        "type": "M",
+                        "name": "Знаешь, в тех местах, откуда я родом, «Слон» — очень популярное имя.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31853"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31852",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ладно, неважно",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31853",
+            "name": "Ох. Лучше бы я не спрашивал.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31853",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31854",
+            "name": "О, я строю землекопалку! Когда она заработает, мне больше не придется рыть норы самому!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8686_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31854",
+                    "edge": {
+                        "type": "M",
+                        "name": "И когда машина будет готова?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31855"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31854",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты делаешь земле... как-её-там из паровоза?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31856"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31854",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хочешь, я помогу. У тебя ведь есть инструменты?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31857"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31854",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты, наверное, устал. Не хочешь перекусить? У меня есть сырный пирог.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31862"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2344"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31854",
+                    "edge": {
+                        "type": "M",
+                        "name": "Понятно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31855",
+            "name": "У меня все еще нет нескольких запчастей. Мне нужен поршень и мотор. Так что, я не знаю, когда закончу.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31855",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я принесу их тебе, если найду",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31859"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31855",
+                    "edge": {
+                        "type": "M",
+                        "name": "Понятно",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31856",
+            "name": "А из чего же еще? Только так можно достать нужные детали. По крайней мере, некоторые.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31856",
+                    "edge": {
+                        "type": "M",
+                        "name": "Каких деталей тебе не хватает?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31855"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31856",
+                    "edge": {
+                        "type": "M",
+                        "name": "А хозяева паровоза не будут против?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31858"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31856",
+                    "edge": {
+                        "type": "M",
+                        "name": "Тогда ладно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31857",
+            "name": "Нет, спасибо. Здесь нужна аккуратная работа. А ты всё-таки... Ну понимаешь. Слон.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31857",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я пропущу это мимо своих слоновьих ушей.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31857",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты мог бы попросить помощи у Мышонка.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31860"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2484"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31857",
+                    "edge": {
+                        "type": "M",
+                        "name": "Зато я не слепой.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31861"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31857",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ладно, как хочешь.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31858",
+            "name": "Кто, грибные братья? Не смеши. Надо быть очень глупым, чтобы сунуться сюда.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31858",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я начинаю с этим соглашаться.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31858",
+                    "edge": {
+                        "type": "M",
+                        "name": "И еще более  глупым, чтобы здесь жить.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31861"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31858",
+                    "edge": {
+                        "type": "M",
+                        "name": "Что за грибные братья?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31863"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31858",
+                    "edge": {
+                        "type": "M",
+                        "name": "Все ясно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31859",
+            "name": "О, это будет очень мило с твоей стороны. Я, правда, облазил уже все здешние пещеры, поэтому сомневаюсь, что у тебя получится.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8686_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31859",
+                    "edge": {
+                        "type": "M",
+                        "name": "Договорились",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31860",
+            "name": "Ох, нет. На самом деле я не очень люблю мышей.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31860",
+                    "edge": {
+                        "type": "M",
+                        "name": "Жаль, что ты так думаешь.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31860",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да, мыши настоящие свиньи.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31860",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хочешь попробовать пирог, который испек Мышонок?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31862"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2344"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31861",
+            "name": "Ой, знаешь, что, иди отсюда.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8685_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31861",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31862",
+            "name": "Почему ты сразу не сказал, что у тебя есть пирог? Конечно хочу!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8686_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31862",
+                    "edge": {
+                        "type": "I",
+                        "name": "...",
+                        "addInventories": ["2485"],
+                        "subInventories": ["2344"],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31747"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31863",
+            "name": "Грибным братьям раньше принадлежали эти шахты. Похоже, они действительно любили грибы.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8684_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31863",
+                    "edge": {
+                        "type": "M",
+                        "name": "Похоже на то.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31863",
+                    "edge": {
+                        "type": "M",
+                        "name": "Все ясно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31850"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31864",
+            "name": "Эй! не трогай мою машину! Ты не сможешь ее починить, если сломаешь.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8685_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31864",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хорошо, хорошо, я просто смотрел.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31864",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хорошо, хорошо, я просто смотрел.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31747"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2485"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31866",
+            "name": "Эй, ты! Убери свой хобот от моих инструментов!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8685_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31866",
+                    "edge": {
+                        "type": "M",
+                        "name": "А я просто мимо проходил.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31411"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31867",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8651_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31867",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "34090"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31868",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8562_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31868",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31868",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31447"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31868",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреться",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31868",
+                    "edge": {
+                        "type": "M",
+                        "name": "Поговорить с Мышонком и Кротом",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "31869",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8687_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "31869",
+                    "edge": {
+                        "type": "M",
+                        "name": "Что это вы тут делаете?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32167"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31869",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вход в пещеру завалило!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32172"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2516"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31869",
+                    "edge": {
+                        "type": "M",
+                        "name": "Крот, как можно починить электростанцию?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32176"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2497"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "31869",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не обращайте внимания.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32167",
+            "name": "Мы едим пирог!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8687_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32167",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я думал, вы не общаетесь.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32168"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32167",
+                    "edge": {
+                        "type": "M",
+                        "name": "Как здорово, может быть и со мной поделитесь?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32169"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32167",
+                    "edge": {
+                        "type": "M",
+                        "name": "Крот, а как же твоя землекопалка?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32170"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32167",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не буду вам мешать.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32168",
+            "name": "— Я же не знал, что Мышонок умеет печь такие вкусные пироги.\r\n— Крот обещал мне сделать кофе-машину! — добавил Мышонок",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8687_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32168",
+                    "edge": {
+                        "type": "M",
+                        "name": "О, может быть и мне кусочек достанется?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32169"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32168",
+                    "edge": {
+                        "type": "M",
+                        "name": "Рад за вас.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32169",
+            "name": "Разве ты уже не пробовал?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32169",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32170",
+            "name": "Ох, ты знаешь, мне сейчас не до нее. на свете есть вещи поважнее. Например, эмм... пироги.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32170",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я ненавижу вас обоих.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32171"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32170",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да, ты прав.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32171",
+            "name": "Тогда не мешай нам!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8689_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32171",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32172",
+            "name": "В самом деле? У нашей пещеры был вход?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32172",
+                    "edge": {
+                        "type": "M",
+                        "name": "Был! А теперь я не могу выбраться отсюда!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32173"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32173",
+            "name": "Странно. Мы думали, ты всегда здесь жил.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32173",
+                    "edge": {
+                        "type": "M",
+                        "name": "Как же вы меня бесите.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32171"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32173",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нет, не всегда!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32174"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32173",
+                    "edge": {
+                        "type": "M",
+                        "name": "Так как мне выбраться?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32175"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32173",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вы мне очень помогли.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32174",
+            "name": "Ммм... Давно переехал?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32174",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32175",
+            "name": "Не знаю. Может, если у нас был вход, есть и выход?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32175",
+                    "edge": {
+                        "type": "M",
+                        "name": "Это так глупо, что даже не глупо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32176",
+            "name": "Починить? Мне казалось, она работает.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32176",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нет, Крот, она не работает.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32177"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32176",
+                    "edge": {
+                        "type": "M",
+                        "name": "Так иди и проверь!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32177"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32176",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вообще-то да, теперь работает. Думаю, я скоро выберусь отсюда.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32178"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2432"]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "32177",
+            "name": "Да черт с ней. Пусть грибные братья этим занимаются.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8688_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32177",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ох, ну спасибо.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31869"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32177",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты просто ленивый кусок крота.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32171"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32178",
+            "name": "— В самом деле? Тогда пока. — сказал Крот.\r\n— Пока-пока! — добавил Мышонок.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8687_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32178",
+                    "edge": {
+                        "type": "M",
+                        "name": "Мне будет вас не хватать.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32178",
+                    "edge": {
+                        "type": "M",
+                        "name": "Прощайте.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31868"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32179",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8573_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32179",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31867"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32179",
+                    "edge": {
+                        "type": "M",
+                        "name": "Воспользоваться лифтом",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32179",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть завал",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32180",
+            "name": "Ага, я понял, ты просто хочешь мой пирог! Какой ты противный коварный слон.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8692_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32180",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32181",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8652_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32181",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32183"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32182",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8555_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32182",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти налево",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32182",
+                    "edge": {
+                        "type": "M",
+                        "name": "Идти направо",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31416"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32182",
+                    "edge": {
+                        "type": "M",
+                        "name": "Осмотреть яму",
+                        "action": {
+                            "type": "T",
+                            "message": "",
+                            "hide": false
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32183",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8653_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32183",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32182"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32185",
+            "name": "У меня плохое предчувствие.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8563_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32185",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не бойся, это всего лишь яма с водой.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31542"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32185",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты прав, не стоит рисковать.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31408"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32186",
+            "name": "Думаешь, это хорошая мысль?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8560_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32186",
+                    "edge": {
+                        "type": "M",
+                        "name": "Конечно, почему нет?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31544"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32186",
+                    "edge": {
+                        "type": "M",
+                        "name": "Вообще-то ты прав, лучше не стоит рисковать",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31464"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32552",
+            "name": "В чем дело?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "I",
+                        "name": "Ты кто?",
+                        "addInventories": ["2484"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32553"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2484"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Чем занимаешься?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32554"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты знаком с Кротом?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32566"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я дал попробовать Кроту твой пирог — Крот был просто в восторге!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32567"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я дал попробовать Кроту твой пирог — кажется, он ему не понравился",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32570"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2485"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Кто такие грибные братья?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32571"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32552",
+                    "edge": {
+                        "type": "M",
+                        "name": "Не обращай внимания",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32553",
+            "name": "Я Мышонок. Я здесь живу.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32553",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я должен был догадаться.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32553",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ну так... Чем занимаешься, Мышонок?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32554"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32554",
+            "name": "Как раз пробую сырный пирог, который испек сегодня.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8691_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32554",
+                    "edge": {
+                        "type": "M",
+                        "name": "И как он, вкусный?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32556"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2696"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32554",
+                    "edge": {
+                        "type": "M",
+                        "name": "И как он, вкусный?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32557"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2696"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32554",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я люблю пироги! Дашь попробовать?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32558"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2696"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32554",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ты прав, это не очень интересно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32555",
+            "name": "Какая наглая ложь! Вам, слонам, лишь бы пожрать нахаляву! Отдай пирог!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8692_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32555",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32556",
+            "name": "Погоди, ты ведь уже пробовал.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32556",
+                    "edge": {
+                        "type": "M",
+                        "name": "Ой, и правда.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32556",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нет, это был другой слон.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32555"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32557",
+            "name": "Вкусный? Да он божественный! Жаль, никто не сможет оценить его по достоинству.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8691_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32557",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я бы мог, если бы ты дал мне его попробовать.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32558"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32557",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я могу найти кого-нибудь, кто сможет.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32559"
+                        }
+                    },
+                    "visibility": {
+                        "type": "SHOW",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32557",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я думаю, Крот бы смог!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32560"
+                        }
+                    },
+                    "visibility": {
+                        "type": "HIDE",
+                        "inventories": ["2482"]
+                    }
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32557",
+                    "edge": {
+                        "type": "M",
+                        "name": "Видимо, это твоя судьба.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32558",
+            "name": "Хорошая попытка, но нет.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32558",
+                    "edge": {
+                        "type": "M",
+                        "name": "Если ты не даешь его никому пробовать — откуда ты знаешь, что пирог действительно вкусный?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32561"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32558",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да ты просто жадный мышонок! Может быть тебя ударить лопатой?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32565"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32558",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хорошо, хорошо, я не настаиваю.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32559",
+            "name": "Пфф, они все просто хотят сожрать мой пирог.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32559",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32560",
+            "name": "Сомневаюсь, что крот разбирается хоть в чем-то кроме своих машин. Уж точно не в пирогах.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32560",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32561",
+            "name": "Откуда знаю? Оттуда и знаю, это ведь мой пирог! Я же пробовал свой пирог?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32561",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да, но это ведь не одно и то же.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32562"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32562",
+            "name": "Хмм...",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32562",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32563"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32562",
+                    "edge": {
+                        "type": "M",
+                        "name": "Хочешь, я попробую?",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32180"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32562",
+                    "edge": {
+                        "type": "M",
+                        "name": "Знаешь, забудь.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32563"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32563",
+            "name": "Нет, постой. Ты прав. Попробуй, он действительно вкусный?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32563",
+                    "edge": {
+                        "type": "I",
+                        "name": "М-м-м, да он восхитителен! (сказать правду)",
+                        "addInventories": ["2696", "2344"],
+                        "subInventories": [],
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32564"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32563",
+                    "edge": {
+                        "type": "M",
+                        "name": "Фу, боже, какая дрянь! (соврать)",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32555"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32564",
+            "name": "О, это так приятно слышать! Оказывается, вы, слоны, не такие уж и плохие люди!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8691_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32564",
+                    "edge": {
+                        "type": "M",
+                        "name": "Тебе спасибо за пирог!",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32565",
+            "name": "Себя ударь, бегемот ушастый!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8692_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32565",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "31407"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32566",
+            "name": "Да, но мы почти не общаемся. Ну ты понимаешь. Я мышь, а он ...крот.",
+            "imageUrl": null,
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32566",
+                    "edge": {
+                        "type": "M",
+                        "name": "Совсем как взрослые.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32567",
+            "name": "Правда? Ему правда понравилось?",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32567",
+                    "edge": {
+                        "type": "M",
+                        "name": "Да! Я думаю, он был более чем доволен.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32568"
+                        }
+                    },
+                    "visibility": null
+                },
+                {
+                    "id": null,
+                    "nodeFrom": "32567",
+                    "edge": {
+                        "type": "M",
+                        "name": "Нет, я шучу. На самом деле он чуть было не выплюнул пирог вместе с завтраком.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32570"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32568",
+            "name": "О-о-о, это так здорово! Надо записать в дневничок!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8691_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32568",
+                    "edge": {
+                        "type": "M",
+                        "name": "Я думал, дневнички ведут только девочки.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32569"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32569",
+            "name": "Журнал. Я имел ввиду журнал. Серьезный журнал.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32569",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32570",
+            "name": "В самом деле? Что ж, я всегда подозревал, что у кротов нет вкуса!",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32570",
+                    "edge": {
+                        "type": "M",
+                        "name": "...",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "32571",
+            "name": "Бабушка рассказывала, что грибные братья жили здесь раньше, до нас. Это они тут все построили.",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8690_preview.jpg",
+            "descr": null,
+            "routes": [
+                {
+                    "id": null,
+                    "nodeFrom": "32571",
+                    "edge": {
+                        "type": "M",
+                        "name": "Понятно.",
+                        "action": {
+                            "type": "M",
+                            "nodeTo": "32552"
+                        }
+                    },
+                    "visibility": null
+                }
+            ]
+        },
+        {
+            "id": "34090",
+            "name": "",
+            "imageUrl": "http://kvester.ru/var/images/quest/data/fpreview/2251/image8654_preview.jpg",
+            "descr": null,
+            "routes": []
+        }
+    ],
+    "links": [
+        {
+            "id": "640",
+            "bottom": false,
+            "edge": {
+                "type": "I",
+                "name": "Поставить на вагонетку мотор",
+                "addInventories": ["2422"],
+                "subInventories": ["2625", "2486"],
+                "action": {
+                    "type": "T",
+                    "message": "",
+                    "hide": true
+                }
+            },
+            "visibility": {
+                "type": "HIDE",
+                "inventories": ["2625", "2486"]
+            }
+        },
+        {
+            "id": "748",
+            "bottom": false,
+            "edge": {
+                "type": "M",
+                "name": "Тестовая залупа",
+                "action": {
+                    "type": "M",
+                    "nodeTo": "31847"
+                }
+            },
+            "visibility": {
+                "type": "HIDE",
+                "inventories": ["3044"]
+            }
+        }
+    ],
+    "items": [
+        {
+            "questId": "2251",
+            "itemId": "2344",
+            "label": "Сырный пирог",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2342",
+            "label": "Дедушкины часы",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2343",
+            "label": "Гаечный ключ",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2394",
+            "label": "_болото осушено",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2358",
+            "label": "_вход завален",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2377",
+            "label": "Колесо",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2422",
+            "label": "Вагонетка с мотором",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2432",
+            "label": "_электричество есть",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2482",
+            "label": "_познакомился с кротом",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2483",
+            "label": "_знаешь про землекопалку",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2484",
+            "label": "_познакомился с мышонком",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2485",
+            "label": "_отдал кроту пирог",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2486",
+            "label": "Вагонетка",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2497",
+            "label": "_нашел электростанцию",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2515",
+            "label": "_нужен рычаг",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2516",
+            "label": "_знаешь что вход завалило",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2571",
+            "label": "Синие грибы",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2572",
+            "label": "_топливо есть",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2609",
+            "label": "_вагон открыт",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2610",
+            "label": "Ключ шахтера",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2625",
+            "label": "Мотор",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2662",
+            "label": "Каска",
+            "visible": true,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "2696",
+            "label": "_попробовал пирог",
+            "visible": false,
+            "start": false
+        },
+        {
+            "questId": "2251",
+            "itemId": "3044",
+            "label": "!тестовая залупа",
+            "visible": false,
+            "start": false
+        }
+    ]
+}

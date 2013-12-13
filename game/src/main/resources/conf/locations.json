@@ -1,0 +1,9 @@
+[
+    {
+        "id": "first",
+        "title": {
+            "ru": "Локация #1"
+        },
+        "background": "assets/8.jpg"
+    }
+]
